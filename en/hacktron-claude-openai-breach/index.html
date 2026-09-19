@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude used to breach OpenAI employee accounts in under 72 hours — EmaritesAI</title>
+<meta name="description" content="Independent researchers at Hacktron say they used Anthropic&#39;s Claude Opus 4.8 and 5 to break into OpenAI employee accounts in under 72 hours, as part of OpenAI&#39;s bug-bounty programme. The chain started with a flaw in how Discourse, which hosts OpenAI&#39;s community forums, processes HEIF images. OpenAI has fixed the issues and paid a $6,500 award.">
+<meta property="og:image" content="https://abahanad69.github.io/emaritesai/media/2026-09-19_01/slide_01_cover_en.jpg">
+<meta property="og:title" content="Claude used to breach OpenAI employee accounts in under 72 hours">
+<meta property="og:description" content="Independent researchers at Hacktron say they used Anthropic&#39;s Claude Opus 4.8 and 5 to break into OpenAI employee accounts in under 72 hours, as part of OpenAI&#39;s bug-bounty programme. The chain started with a flaw in how Discourse, which hosts OpenAI&#39;s community forums, processes HEIF images. OpenAI has fixed the issues and paid a $6,500 award.">
+<link rel="alternate" type="application/rss+xml" title="EmaritesAI" href="https://abahanad69.github.io/emaritesai/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+Arabic:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B0F19;--bg2:#141B2D;--accent:#4F8CFF;--accent2:#9B5CFF;--text:#FFFFFF;--muted:#9AA4B8}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(160deg,var(--bg),var(--bg2));color:var(--text);font-family:Inter,"Noto Sans Arabic",system-ui,sans-serif;min-height:100vh}
+html[dir=rtl] body{font-family:"Noto Sans Arabic",Inter,system-ui,sans-serif}
+a{color:var(--accent);text-decoration:none}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px 60px}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:22px;color:var(--text)}
+.logo i{display:inline-block;width:34px;height:34px;border-radius:9px;background:var(--accent);color:#fff;font-style:normal;text-align:center;line-height:34px;font-weight:800}
+nav a{margin-inline-start:16px;color:var(--muted);font-weight:600}
+nav a.active{color:var(--text)}
+.tag{display:inline-block;background:var(--accent);color:#fff;border-radius:999px;padding:4px 12px;font-size:12px;font-weight:600}
+.card{display:block;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08);color:var(--text)}
+.card h2{margin:10px 0 6px;font-size:24px;line-height:1.25}
+.card p{margin:0;color:var(--muted)}
+.meta{color:var(--muted);font-size:13px;margin-top:8px}
+article h1{font-size:38px;line-height:1.15;margin:18px 0 8px}
+article .sub{font-size:20px;color:var(--muted);margin:0 0 20px}
+article p{font-size:18px;line-height:1.7}
+.points{background:rgba(255,255,255,.05);border-radius:16px;padding:18px 24px;margin:24px 0}
+.points li{margin:8px 0;font-size:17px}
+.media{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:24px 0}
+.media img,.media video{width:100%;border-radius:12px;display:block}
+.sources{font-size:14px;color:var(--muted)}
+.fact{font-size:14px;margin:4px 0}
+footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="https://abahanad69.github.io/emaritesai/en/"><i>E</i>EmaritesAI</a>
+  <nav>
+    <a href="https://abahanad69.github.io/emaritesai/en/hacktron-claude-openai-breach/" class="active">EN</a>
+    <a href="https://abahanad69.github.io/emaritesai/ar/hacktron-claude-openai-breach/" class="">العربية</a>
+    <a href="https://instagram.com/emaritesai" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+</header>
+
+<article>
+  <span class="tag">Policy &amp; Safety</span>
+  <h1>Claude used to breach OpenAI employee accounts in under 72 hours</h1>
+  <p class="sub">Three researchers at Hacktron chained two bugs, reached an employee&#39;s account and were paid a $6,500 bounty.</p>
+  <div class="meta">2026-09-19 · EmaritesAI</div>
+  <p>A three-person team at the security startup Hacktron used Anthropic&#39;s Claude models to get inside OpenAI&#39;s systems, The Wall Street Journal reported, in an account confirmed by both The Verge and TechCrunch.</p><p>The researchers chained two critical vulnerabilities, starting with the way Discourse — the third-party platform hosting OpenAI&#39;s community forums — handles HEIF image files. That gave them remote code execution and, from there, access to OpenAI employee accounts. They stopped short of reading the internal code in OpenAI&#39;s &#34;Monorepo&#34; repository, instead opening a pull request from an employee&#39;s account to prove the access was real.</p><p>Hacktron says the same technique, which it calls the HEIF Heist, took one or two days to adapt to other targets including Slack, Meta, GitHub Enterprise and ImageMagick, and that the whole effort consumed under $3,000 in model tokens. By its own account only one target, Shopify, detected it.</p><p>The work was done inside OpenAI&#39;s bug-bounty programme. OpenAI says the vulnerabilities are fixed and paid Hacktron $6,500.</p><p>The episode lands while AI companies are already under pressure over security, and it shows how cheap off-the-shelf models have made serious offensive research. &#34;For $200 a month, anyone can use these tools and hack into a company like OpenAI,&#34; Gray Swan chief executive Matt Fredrikson told TechCrunch.</p>
+  <div class="points"><strong>3 things to know</strong>
+    <ol><li>Hacktron chained two bugs to reach OpenAI employee accounts in under 72 hours</li><li>Entry point was HEIF image handling in Discourse, which hosts OpenAI&#39;s forums</li><li>OpenAI has fixed the flaws and paid a $6,500 bug-bounty award</li></ol>
+  </div>
+  
+  <div class="media">
+    
+      <video controls playsinline preload="metadata" src="https://abahanad69.github.io/emaritesai/media/2026-09-19_01/reel_ar.mp4"></video>
+      
+    
+      
+    
+      <video controls playsinline preload="metadata" src="https://abahanad69.github.io/emaritesai/media/2026-09-19_01/reel_en.mp4"></video>
+      
+    
+      
+    
+      
+    
+      
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-09-19_01/slide_03_points_en.jpg" alt="Claude used to breach OpenAI employee accounts in under 72 hours">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-09-19_01/slide_04_points_ar.jpg" alt="Claude used to breach OpenAI employee accounts in under 72 hours">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-09-19_01/slide_05_outro.jpg" alt="Claude used to breach OpenAI employee accounts in under 72 hours">
+    
+  </div>
+  
+  <div class="sources"><strong>Sources:</strong>
+    <a href="https://www.theverge.com/ai-artificial-intelligence/997444/openai-hack-claude-heif-heist" target="_blank" rel="noopener nofollow">The Verge</a>, <a href="https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-into-openai/" target="_blank" rel="noopener nofollow">TechCrunch</a>
+  </div>
+  <div class="sources" style="margin-top:10px">
+    <div class="fact">✅ Hacktron used Claude to access OpenAI employee accounts; OpenAI paid $6,500</div><div class="fact">⚠️ Entry via HEIF image handling in Discourse; under $3,000 in tokens; only Shopify detected it</div>
+  </div>
+</article>
+
+<footer>EmaritesAI · AI &amp; tech, explained daily · @emaritesai</footer>
+</div>
+</body>
+</html>
