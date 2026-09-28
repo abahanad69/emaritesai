@@ -33,6 +33,7 @@ article .sub{font-size:20px;color:var(--muted);margin:0 0 20px}
 article p{font-size:18px;line-height:1.7}
 .points{background:rgba(255,255,255,.05);border-radius:16px;padding:18px 24px;margin:24px 0}
 .points li{margin:8px 0;font-size:17px}
+.spec{width:100%;border-collapse:collapse;margin:10px 0;font-size:16px}.spec th,.spec td{padding:7px 8px;border-bottom:1px solid rgba(255,255,255,.08);text-align:start}.spec th{color:#9AA4B8;font-weight:600;width:36%}.spec td:last-child{text-align:end;font-variant-numeric:tabular-nums}.points small{color:#9AA4B8}
 .media{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:24px 0}
 .media img,.media video{width:100%;border-radius:12px;display:block}
 .sources{font-size:14px;color:var(--muted)}
@@ -57,6 +58,9 @@ footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
   <p class="sub">Three researchers at Hacktron chained two bugs, reached an employee&#39;s account and were paid a $6,500 bounty.</p>
   <div class="meta">2026-09-19 · EmaritesAI</div>
   <p>A three-person team at the security startup Hacktron used Anthropic&#39;s Claude models to get inside OpenAI&#39;s systems, The Wall Street Journal reported, in an account confirmed by both The Verge and TechCrunch.</p><p>The researchers chained two critical vulnerabilities, starting with the way Discourse — the third-party platform hosting OpenAI&#39;s community forums — handles HEIF image files. That gave them remote code execution and, from there, access to OpenAI employee accounts. They stopped short of reading the internal code in OpenAI&#39;s &#34;Monorepo&#34; repository, instead opening a pull request from an employee&#39;s account to prove the access was real.</p><p>Hacktron says the same technique, which it calls the HEIF Heist, took one or two days to adapt to other targets including Slack, Meta, GitHub Enterprise and ImageMagick, and that the whole effort consumed under $3,000 in model tokens. By its own account only one target, Shopify, detected it.</p><p>The work was done inside OpenAI&#39;s bug-bounty programme. OpenAI says the vulnerabilities are fixed and paid Hacktron $6,500.</p><p>The episode lands while AI companies are already under pressure over security, and it shows how cheap off-the-shelf models have made serious offensive research. &#34;For $200 a month, anyone can use these tools and hack into a company like OpenAI,&#34; Gray Swan chief executive Matt Fredrikson told TechCrunch.</p>
+  
+  
+  
   <div class="points"><strong>3 things to know</strong>
     <ol><li>Hacktron chained two bugs to reach OpenAI employee accounts in under 72 hours</li><li>Entry point was HEIF image handling in Discourse, which hosts OpenAI&#39;s forums</li><li>OpenAI has fixed the flaws and paid a $6,500 bug-bounty award</li></ol>
   </div>
