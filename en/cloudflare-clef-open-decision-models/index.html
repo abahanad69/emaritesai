@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cloudflare releases Clef, open-weight AI models built to decide — EmaritesAI</title>
+<meta name="description" content="Cloudflare has released Clef and Clef-flash, two decision models that pick from set options and report how confident they are. They run on Workers AI and are open-sourced under Apache 2.0, joining a fast-growing wave of similar models.">
+<meta property="og:image" content="https://abahanad69.github.io/emaritesai/media/2026-10-02_06/slide_01_cover_en.jpg">
+<meta property="og:title" content="Cloudflare releases Clef, open-weight AI models built to decide">
+<meta property="og:description" content="Cloudflare has released Clef and Clef-flash, two decision models that pick from set options and report how confident they are. They run on Workers AI and are open-sourced under Apache 2.0, joining a fast-growing wave of similar models.">
+<link rel="alternate" type="application/rss+xml" title="EmaritesAI" href="https://abahanad69.github.io/emaritesai/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+Arabic:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B0F19;--bg2:#141B2D;--accent:#4F8CFF;--accent2:#9B5CFF;--text:#FFFFFF;--muted:#9AA4B8}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(160deg,var(--bg),var(--bg2));color:var(--text);font-family:Inter,"Noto Sans Arabic",system-ui,sans-serif;min-height:100vh}
+html[dir=rtl] body{font-family:"Noto Sans Arabic",Inter,system-ui,sans-serif}
+a{color:var(--accent);text-decoration:none}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px 60px}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:22px;color:var(--text)}
+.logo i{display:inline-block;width:34px;height:34px;border-radius:9px;background:var(--accent);color:#fff;font-style:normal;text-align:center;line-height:34px;font-weight:800}
+nav a{margin-inline-start:16px;color:var(--muted);font-weight:600}
+nav a.active{color:var(--text)}
+.tag{display:inline-block;background:var(--accent);color:#fff;border-radius:999px;padding:4px 12px;font-size:12px;font-weight:600}
+.card{display:block;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08);color:var(--text)}
+.card h2{margin:10px 0 6px;font-size:24px;line-height:1.25}
+.card p{margin:0;color:var(--muted)}
+.meta{color:var(--muted);font-size:13px;margin-top:8px}
+article h1{font-size:38px;line-height:1.15;margin:18px 0 8px}
+article .sub{font-size:20px;color:var(--muted);margin:0 0 20px}
+article p{font-size:18px;line-height:1.7}
+.points{background:rgba(255,255,255,.05);border-radius:16px;padding:18px 24px;margin:24px 0}
+.points li{margin:8px 0;font-size:17px}
+.spec{width:100%;border-collapse:collapse;margin:10px 0;font-size:16px}.spec th,.spec td{padding:7px 8px;border-bottom:1px solid rgba(255,255,255,.08);text-align:start}.spec th{color:#9AA4B8;font-weight:600;width:36%}.spec td:last-child{text-align:end;font-variant-numeric:tabular-nums}.points small{color:#9AA4B8}
+.media{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:24px 0}
+.media img,.media video{width:100%;border-radius:12px;display:block}
+.sources{font-size:14px;color:var(--muted)}
+.fact{font-size:14px;margin:4px 0}
+footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="https://abahanad69.github.io/emaritesai/en/"><i>E</i>EmaritesAI</a>
+  <nav>
+    <a href="https://abahanad69.github.io/emaritesai/en/cloudflare-clef-open-decision-models/" class="active">EN</a>
+    <a href="https://abahanad69.github.io/emaritesai/ar/cloudflare-clef-open-decision-models/" class="">العربية</a>
+    <a href="https://instagram.com/emaritesai" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+</header>
+
+<article>
+  <span class="tag">AI Models</span>
+  <h1>Cloudflare releases Clef, open-weight AI models built to decide</h1>
+  <p class="sub">Clef and Clef-flash return choices with confidence scores instead of free text.</p>
+  <div class="meta">2026-10-02 · EmaritesAI</div>
+  <p>Cloudflare has launched Clef and Clef-flash, two open-weight decision models, and made them available on its Workers AI platform and on Hugging Face under the Apache 2.0 licence. The company also announced a reinforcement learning service for fine-tuning Clef, offered for now through its engineers rather than self-serve.</p><p>A decision model does not write essays. Given an input, such as a support ticket, it chooses from a fixed list of answers and attaches a probability to each one. That makes it suited to the many small yes-or-no and routing steps inside AI agent workflows, where a full chatbot is slower, costlier and less predictable.</p><p>Cloudflare says Clef is built on Qwen open models, supports a 64K-token context and can also classify images. In its own tests, it reports a median latency of 209 milliseconds for Clef and 38.8 milliseconds for Clef-flash, and says Clef currently leads the Jev Decision Index. Those results are vendor-reported. Internally, Cloudflare says it uses Clef to categorise websites for threat intelligence.</p><p>The release reflects a crowded new niche. Decision models took off after startup TypeSafe introduced Jev, and AWS released its own open model, Strands Decider 2B, the same week. Clef is also designed to be compatible with Jev&#39;s API, making it easier to swap in.</p><p>Cloudflare has not published separate pricing for Clef in its announcement.</p>
+  
+  
+  <div class="points"><strong>Spec sheet</strong>
+    <table class="spec">
+      <tr><th>Model</th><td>Clef / Clef-flash · Cloudflare</td></tr>
+      <tr><th>Type</th><td>Decision model (classifier)</td></tr>
+      <tr><th>Released</th><td>2026-10-01</td></tr>
+      <tr><th>Context window</th><td>64K tokens</td></tr>
+      
+      <tr><th>Where to use it</th><td>Workers AI; open weights on Hugging Face (Apache 2.0)</td></tr>
+      <tr><th>Clef median latency</th><td>209 ms <small>(Cloudflare blog (vendor-reported))</small></td></tr><tr><th>Clef-flash median latency</th><td>38.8 ms <small>(Cloudflare blog (vendor-reported))</small></td></tr><tr><th>BANKING77 macro-F1</th><td>94.20 <small>(Cloudflare blog (vendor-reported))</small></td></tr><tr><th>API-Bank accuracy</th><td>91.93 <small>(Cloudflare blog (vendor-reported))</small></td></tr>
+    </table>
+  </div>
+  
+  
+  <div class="points"><strong>3 things to know</strong>
+    <ol><li>Clef and Clef-flash pick from set options and return confidence scores</li><li>Open weights under Apache 2.0, hosted on Cloudflare Workers AI</li><li>Joins a wave of decision models, including AWS&#39;s Strands Decider 2B</li></ol>
+  </div>
+  
+  <div class="media">
+    
+      
+    
+      
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-02_06/slide_03_specs_en.jpg" alt="Cloudflare releases Clef, open-weight AI models built to decide">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-02_06/slide_04_specs_ar.jpg" alt="Cloudflare releases Clef, open-weight AI models built to decide">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-02_06/slide_05_points_en.jpg" alt="Cloudflare releases Clef, open-weight AI models built to decide">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-02_06/slide_06_points_ar.jpg" alt="Cloudflare releases Clef, open-weight AI models built to decide">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-02_06/slide_07_outro.jpg" alt="Cloudflare releases Clef, open-weight AI models built to decide">
+    
+  </div>
+  
+  <div class="sources"><strong>Sources:</strong>
+    <a href="https://blog.cloudflare.com/clef-decision-models/" target="_blank" rel="noopener nofollow">Cloudflare Blog - Clef</a>, <a href="https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/" target="_blank" rel="noopener nofollow">TechCrunch (decision models / Strands Decider)</a>
+  </div>
+  <div class="sources" style="margin-top:10px">
+    <div class="fact">⚠️ Clef and Clef-flash released on Workers AI and Hugging Face under Apache 2.0</div><div class="fact">⚠️ Latency 209 ms / 38.8 ms; leads Jev Decision Index; benchmark scores</div><div class="fact">⚠️ AWS released Strands Decider 2B the same week</div>
+  </div>
+</article>
+
+<footer>EmaritesAI · AI &amp; tech, explained daily · @emaritesai</footer>
+</div>
+</body>
+</html>
