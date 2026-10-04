@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to run an AI model on your own laptop, in 4 steps — EmaritesAI</title>
+<meta name="description" content="Open-weight models and free runner apps make it possible to use AI without sending anything to the cloud. The key is matching the model size to your computer&#39;s memory.">
+<meta property="og:image" content="https://abahanad69.github.io/emaritesai/media/2026-10-03_08/slide_01_cover_en.jpg">
+<meta property="og:title" content="How to run an AI model on your own laptop, in 4 steps">
+<meta property="og:description" content="Open-weight models and free runner apps make it possible to use AI without sending anything to the cloud. The key is matching the model size to your computer&#39;s memory.">
+<link rel="alternate" type="application/rss+xml" title="EmaritesAI" href="https://abahanad69.github.io/emaritesai/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+Arabic:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B0F19;--bg2:#141B2D;--accent:#4F8CFF;--accent2:#9B5CFF;--text:#FFFFFF;--muted:#9AA4B8}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(160deg,var(--bg),var(--bg2));color:var(--text);font-family:Inter,"Noto Sans Arabic",system-ui,sans-serif;min-height:100vh}
+html[dir=rtl] body{font-family:"Noto Sans Arabic",Inter,system-ui,sans-serif}
+a{color:var(--accent);text-decoration:none}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px 60px}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:22px;color:var(--text)}
+.logo i{display:inline-block;width:34px;height:34px;border-radius:9px;background:var(--accent);color:#fff;font-style:normal;text-align:center;line-height:34px;font-weight:800}
+nav a{margin-inline-start:16px;color:var(--muted);font-weight:600}
+nav a.active{color:var(--text)}
+.tag{display:inline-block;background:var(--accent);color:#fff;border-radius:999px;padding:4px 12px;font-size:12px;font-weight:600}
+.card{display:block;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08);color:var(--text)}
+.card h2{margin:10px 0 6px;font-size:24px;line-height:1.25}
+.card p{margin:0;color:var(--muted)}
+.meta{color:var(--muted);font-size:13px;margin-top:8px}
+article h1{font-size:38px;line-height:1.15;margin:18px 0 8px}
+article .sub{font-size:20px;color:var(--muted);margin:0 0 20px}
+article p{font-size:18px;line-height:1.7}
+.points{background:rgba(255,255,255,.05);border-radius:16px;padding:18px 24px;margin:24px 0}
+.points li{margin:8px 0;font-size:17px}
+.spec{width:100%;border-collapse:collapse;margin:10px 0;font-size:16px}.spec th,.spec td{padding:7px 8px;border-bottom:1px solid rgba(255,255,255,.08);text-align:start}.spec th{color:#9AA4B8;font-weight:600;width:36%}.spec td:last-child{text-align:end;font-variant-numeric:tabular-nums}.points small{color:#9AA4B8}
+.media{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:24px 0}
+.media img,.media video{width:100%;border-radius:12px;display:block}
+.sources{font-size:14px;color:var(--muted)}
+.fact{font-size:14px;margin:4px 0}
+footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="https://abahanad69.github.io/emaritesai/en/"><i>E</i>EmaritesAI</a>
+  <nav>
+    <a href="https://abahanad69.github.io/emaritesai/en/run-an-ai-model-on-your-laptop/" class="active">EN</a>
+    <a href="https://abahanad69.github.io/emaritesai/ar/run-an-ai-model-on-your-laptop/" class="">العربية</a>
+    <a href="https://instagram.com/emaritesai" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+</header>
+
+<article>
+  <span class="tag">AI How-To</span>
+  <h1>How to run an AI model on your own laptop, in 4 steps</h1>
+  <p class="sub">Free tools let you chat with open models offline, keeping your data on your device.</p>
+  <div class="meta">2026-10-03 · EmaritesAI</div>
+  <p>Most people use AI through a website, which means every prompt travels to someone else&#39;s servers. Running a model on your own machine changes that: your documents stay with you, it works offline and there is no monthly fee.</p><p>This week showed the trend from two sides. Ai2 released AstaBrief, an 8-billion-parameter research model that institutions can run themselves, and NVIDIA announced a cheaper DGX Spark desktop built for local AI. But you can start with the laptop you already own.</p><p>First, check your memory. A model must fit in RAM, or in GPU or unified memory, so a machine with 16GB can comfortably handle small models of a few billion parameters, while larger ones need far more.</p><p>Second, install a free runner such as Ollama or LM Studio. These apps download models and give you a chat window or a local API.</p><p>Third, pick a small, compressed version of an open model. Many come in quantized form, which trades a little accuracy for a much smaller size.</p><p>Finally, test it on real tasks. Local models are usually less capable than top cloud systems, so use them for drafting, summarising and private notes, and check important facts elsewhere.</p>
+  
+  <div class="points"><strong>Step by step</strong>
+    <ol><li>Check memory: The model must fit in your RAM or GPU memory, so note how much you have.</li><li>Install a runner: Free apps like Ollama or LM Studio download and run models for you.</li><li>Pick a small model: Choose a compressed (quantized) open model of a few billion parameters.</li><li>Test and verify: Use it for drafts and summaries, and double-check key facts.</li></ol>
+  </div>
+  
+  
+  
+  <div class="points"><strong>3 things to know</strong>
+    <ol><li>Local AI keeps your data on your device and works offline</li><li>Match model size to your RAM; small quantized models suit most laptops</li><li>Local models are less capable, so verify important answers</li></ol>
+  </div>
+  
+  <div class="media">
+    
+      
+    
+      
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-03_08/slide_03_steps_en.jpg" alt="How to run an AI model on your own laptop, in 4 steps">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-03_08/slide_04_steps_ar.jpg" alt="How to run an AI model on your own laptop, in 4 steps">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-03_08/slide_05_outro.jpg" alt="How to run an AI model on your own laptop, in 4 steps">
+    
+  </div>
+  
+  <div class="sources"><strong>Sources:</strong>
+    <a href="https://docs.ollama.com/" target="_blank" rel="noopener nofollow">Ollama documentation</a>, <a href="https://lmstudio.ai/docs" target="_blank" rel="noopener nofollow">LM Studio documentation</a>, <a href="https://huggingface.co/blog/allenai/astabrief" target="_blank" rel="noopener nofollow">Ai2 - AstaBrief</a>, <a href="https://blogs.nvidia.com/blog/local-ai-dgx-spark-64gb-sync/" target="_blank" rel="noopener nofollow">NVIDIA Blog - DGX Spark 64GB</a>
+  </div>
+  <div class="sources" style="margin-top:10px">
+    <div class="fact">✅ Ollama and LM Studio run open models locally for free</div><div class="fact">⚠️ AstaBrief 8B released for self-hosting; DGX Spark 64GB announced</div>
+  </div>
+</article>
+
+<footer>EmaritesAI · AI &amp; tech, explained daily · @emaritesai</footer>
+</div>
+</body>
+</html>
