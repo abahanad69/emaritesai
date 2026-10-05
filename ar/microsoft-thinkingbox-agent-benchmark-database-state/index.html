@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>اختبار ThinkingBox يكشف تذبذب وكلاء الذكاء الاصطناعي — EmaritesAI</title>
+<meta name="description" content="أطلقت مايكروسوفت وHugging Face اختبار ThinkingBox الذي يضم 507 مهام عمل، ويقيم النتيجة وفق الحالة النهائية لقاعدة البيانات. وحقق النموذج المتصدر Claude Opus 5.5 نسبة 67.16% في المحاولة الأولى، لكنه نجح في 47.53% فقط من المهام في جميع المحاولات العشرين.">
+<meta property="og:image" content="https://abahanad69.github.io/emaritesai/media/2026-10-04_03/slide_01_cover_en.jpg">
+<meta property="og:title" content="اختبار ThinkingBox يكشف تذبذب وكلاء الذكاء الاصطناعي">
+<meta property="og:description" content="أطلقت مايكروسوفت وHugging Face اختبار ThinkingBox الذي يضم 507 مهام عمل، ويقيم النتيجة وفق الحالة النهائية لقاعدة البيانات. وحقق النموذج المتصدر Claude Opus 5.5 نسبة 67.16% في المحاولة الأولى، لكنه نجح في 47.53% فقط من المهام في جميع المحاولات العشرين.">
+<link rel="alternate" type="application/rss+xml" title="EmaritesAI" href="https://abahanad69.github.io/emaritesai/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+Arabic:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B0F19;--bg2:#141B2D;--accent:#4F8CFF;--accent2:#9B5CFF;--text:#FFFFFF;--muted:#9AA4B8}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(160deg,var(--bg),var(--bg2));color:var(--text);font-family:Inter,"Noto Sans Arabic",system-ui,sans-serif;min-height:100vh}
+html[dir=rtl] body{font-family:"Noto Sans Arabic",Inter,system-ui,sans-serif}
+a{color:var(--accent);text-decoration:none}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px 60px}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:22px;color:var(--text)}
+.logo i{display:inline-block;width:34px;height:34px;border-radius:9px;background:var(--accent);color:#fff;font-style:normal;text-align:center;line-height:34px;font-weight:800}
+nav a{margin-inline-start:16px;color:var(--muted);font-weight:600}
+nav a.active{color:var(--text)}
+.tag{display:inline-block;background:var(--accent);color:#fff;border-radius:999px;padding:4px 12px;font-size:12px;font-weight:600}
+.card{display:block;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08);color:var(--text)}
+.card h2{margin:10px 0 6px;font-size:24px;line-height:1.25}
+.card p{margin:0;color:var(--muted)}
+.meta{color:var(--muted);font-size:13px;margin-top:8px}
+article h1{font-size:38px;line-height:1.15;margin:18px 0 8px}
+article .sub{font-size:20px;color:var(--muted);margin:0 0 20px}
+article p{font-size:18px;line-height:1.7}
+.points{background:rgba(255,255,255,.05);border-radius:16px;padding:18px 24px;margin:24px 0}
+.points li{margin:8px 0;font-size:17px}
+.spec{width:100%;border-collapse:collapse;margin:10px 0;font-size:16px}.spec th,.spec td{padding:7px 8px;border-bottom:1px solid rgba(255,255,255,.08);text-align:start}.spec th{color:#9AA4B8;font-weight:600;width:36%}.spec td:last-child{text-align:end;font-variant-numeric:tabular-nums}.points small{color:#9AA4B8}
+.media{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:24px 0}
+.media img,.media video{width:100%;border-radius:12px;display:block}
+.sources{font-size:14px;color:var(--muted)}
+.fact{font-size:14px;margin:4px 0}
+footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="https://abahanad69.github.io/emaritesai/ar/"><i>E</i>EmaritesAI</a>
+  <nav>
+    <a href="https://abahanad69.github.io/emaritesai/en/microsoft-thinkingbox-agent-benchmark-database-state/" class="">EN</a>
+    <a href="https://abahanad69.github.io/emaritesai/ar/microsoft-thinkingbox-agent-benchmark-database-state/" class="active">العربية</a>
+    <a href="https://instagram.com/emaritesai" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+</header>
+
+<article>
+  <span class="tag">أبحاث</span>
+  <h1>اختبار ThinkingBox يكشف تذبذب وكلاء الذكاء الاصطناعي</h1>
+  <p class="sub">يفحص الاختبار الجديد قاعدة البيانات بعد كل مهمة بدلا من تصديق ما يقوله الوكيل.</p>
+  <div class="meta">2026-10-04 · EmaritesAI</div>
+  <p>أطلقت مايكروسوفت ThinkingBox، وهو إطار لتقييم وكلاء الذكاء الاصطناعي نشر بالتعاون مع Hugging Face في 3 أكتوبر. ومعظم اختبارات الوكلاء تنظر إلى الأدوات التي يستدعيها النموذج أو إلى الإجابة التي يكتبها، أما ThinkingBox فيفحص قاعدة البيانات بعد انتهاء الوكيل، فلا تحتسب المهمة ناجحة إلا إذا تغيرت السجلات فعلا بالشكل الصحيح.</p><p>شغل الفريق 18 نموذجا على 507 مهام عمل، وكرر كل مهمة 20 مرة. وتصدر Claude Opus 5.5 بنسبة 67.16% في المحاولة الأولى، لكنه أنجز 47.53% فقط من المهام بشكل صحيح في المحاولات العشرين كلها. أما Kimi-K3 فحل 93.89% من المهام مرة واحدة على الأقل، لكنه نجح في 13.41% فقط في كل مرة.</p><p>ويقول الباحثون إن 79.9% من الإخفاقات سببها طريقة تعامل الوكلاء مع الأدوات لا خلل في الاستدلال. ومن بين المحاولات التي بدت ناجحة وهي ليست كذلك، كتب الوكيل قيما خاطئة في 77.61% منها، وأحدث تغييرات غير مطلوبة في 43.30%.</p><p>وهذا الفارق بين محاولة ناجحة واحدة ونتيجة يعتمد عليها مهم للشركات التي تكلف الوكلاء بالطلبات والسجلات والمدفوعات. ويقدر الباحثون تكلفة المهمة الموثوقة بين 6.80 و20.68 دولارا حسب النموذج.</p><p>الشيفرة متاحة برخصة MIT، وبيانات الاختبار منشورة على Hugging Face برخصة CDLA-Permissive-2.0، لتتمكن فرق أخرى من اختبار وكلائها.</p>
+  
+  
+  
+  <div class="points"><strong>3 نقاط أساسية</strong>
+    <ol><li>يقيم ThinkingBox نحو 507 مهام بفحص قاعدة البيانات لا تقرير الوكيل.</li><li>تصدر Claude Opus 5.5 بنسبة 67.16% أولا و47.53% في 20 محاولة.</li><li>79.9% من الإخفاقات سببها التعامل مع الأدوات لا الاستدلال.</li></ol>
+  </div>
+  
+  <div class="media">
+    
+      
+    
+      
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-04_03/slide_03_numbers_en.jpg" alt="اختبار ThinkingBox يكشف تذبذب وكلاء الذكاء الاصطناعي">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-04_03/slide_04_numbers_ar.jpg" alt="اختبار ThinkingBox يكشف تذبذب وكلاء الذكاء الاصطناعي">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-04_03/slide_05_outro.jpg" alt="اختبار ThinkingBox يكشف تذبذب وكلاء الذكاء الاصطناعي">
+    
+  </div>
+  
+  <div class="sources"><strong>المصادر:</strong>
+    <a href="https://huggingface.co/blog/microsoft/thinkingbox" target="_blank" rel="noopener nofollow">Hugging Face blog (Microsoft): ThinkingBox</a>, <a href="https://huggingface.co/datasets/microsoft/ThinkingBox-Bench" target="_blank" rel="noopener nofollow">Hugging Face dataset: microsoft/ThinkingBox-Bench</a>, <a href="https://runtimewire.com/article/microsoft-thinkingbox-agent-stateful-workflow-benchmark" target="_blank" rel="noopener nofollow">RuntimeWire</a>, <a href="https://fourweekmba.com/ai-microsoft-thinkingbox-opus-5-5-opus-5-tie-241-of-507-tasks-2/" target="_blank" rel="noopener nofollow">FourWeekMBA</a>
+  </div>
+  <div class="sources" style="margin-top:10px">
+    <div class="fact">✅ Microsoft and Hugging Face released ThinkingBox on October 3, 2026</div><div class="fact">✅ 18 models, 507 tasks, 20 runs per task</div><div class="fact">✅ Claude Opus 5.5: 67.16% pass@1, 47.53% pass in all 20 runs</div><div class="fact">⚠️ Kimi-K3 93.89% at least once, 13.41% consistently</div><div class="fact">⚠️ 79.9% of failures from tool handling; 77.61% wrong field values, 43.30% side effects among false successes</div><div class="fact">⚠️ Cost per dependable task $6.80 to $20.68</div><div class="fact">⚠️ MIT code, CDLA-Permissive-2.0 data</div>
+  </div>
+</article>
+
+<footer>EmaritesAI · الذكاء الاصطناعي والتقنية، يومياً · @emaritesai</footer>
+</div>
+</body>
+</html>
