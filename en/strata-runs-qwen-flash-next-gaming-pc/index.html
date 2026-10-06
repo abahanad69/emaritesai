@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Strata runs Qwen&#39;s giant model on a 12GB gaming GPU — EmaritesAI</title>
+<meta name="description" content="Strata, a free open source project on GitHub, runs Alibaba&#39;s large Qwen3.8-Flash-Next model on ordinary gaming PCs with a 12GB graphics card and 32GB of RAM. Its developers measured up to 94 tokens per second on an RTX 5070.">
+<meta property="og:image" content="https://abahanad69.github.io/emaritesai/media/2026-10-05_06/slide_01_cover_en.jpg">
+<meta property="og:title" content="Strata runs Qwen&#39;s giant model on a 12GB gaming GPU">
+<meta property="og:description" content="Strata, a free open source project on GitHub, runs Alibaba&#39;s large Qwen3.8-Flash-Next model on ordinary gaming PCs with a 12GB graphics card and 32GB of RAM. Its developers measured up to 94 tokens per second on an RTX 5070.">
+<link rel="alternate" type="application/rss+xml" title="EmaritesAI" href="https://abahanad69.github.io/emaritesai/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+Arabic:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B0F19;--bg2:#141B2D;--accent:#4F8CFF;--accent2:#9B5CFF;--text:#FFFFFF;--muted:#9AA4B8}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(160deg,var(--bg),var(--bg2));color:var(--text);font-family:Inter,"Noto Sans Arabic",system-ui,sans-serif;min-height:100vh}
+html[dir=rtl] body{font-family:"Noto Sans Arabic",Inter,system-ui,sans-serif}
+a{color:var(--accent);text-decoration:none}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px 60px}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:22px;color:var(--text)}
+.logo i{display:inline-block;width:34px;height:34px;border-radius:9px;background:var(--accent);color:#fff;font-style:normal;text-align:center;line-height:34px;font-weight:800}
+nav a{margin-inline-start:16px;color:var(--muted);font-weight:600}
+nav a.active{color:var(--text)}
+.tag{display:inline-block;background:var(--accent);color:#fff;border-radius:999px;padding:4px 12px;font-size:12px;font-weight:600}
+.card{display:block;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08);color:var(--text)}
+.card h2{margin:10px 0 6px;font-size:24px;line-height:1.25}
+.card p{margin:0;color:var(--muted)}
+.meta{color:var(--muted);font-size:13px;margin-top:8px}
+article h1{font-size:38px;line-height:1.15;margin:18px 0 8px}
+article .sub{font-size:20px;color:var(--muted);margin:0 0 20px}
+article p{font-size:18px;line-height:1.7}
+.points{background:rgba(255,255,255,.05);border-radius:16px;padding:18px 24px;margin:24px 0}
+.points li{margin:8px 0;font-size:17px}
+.spec{width:100%;border-collapse:collapse;margin:10px 0;font-size:16px}.spec th,.spec td{padding:7px 8px;border-bottom:1px solid rgba(255,255,255,.08);text-align:start}.spec th{color:#9AA4B8;font-weight:600;width:36%}.spec td:last-child{text-align:end;font-variant-numeric:tabular-nums}.points small{color:#9AA4B8}
+.media{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:24px 0}
+.media img,.media video{width:100%;border-radius:12px;display:block}
+.sources{font-size:14px;color:var(--muted)}
+.fact{font-size:14px;margin:4px 0}
+footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="https://abahanad69.github.io/emaritesai/en/"><i>E</i>EmaritesAI</a>
+  <nav>
+    <a href="https://abahanad69.github.io/emaritesai/en/strata-runs-qwen-flash-next-gaming-pc/" class="active">EN</a>
+    <a href="https://abahanad69.github.io/emaritesai/ar/strata-runs-qwen-flash-next-gaming-pc/" class="">العربية</a>
+    <a href="https://instagram.com/emaritesai" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+</header>
+
+<article>
+  <span class="tag">Tools &amp; Apps</span>
+  <h1>Strata runs Qwen&#39;s giant model on a 12GB gaming GPU</h1>
+  <p class="sub">The free open source installer puts Qwen3.8-Flash-Next on a home PC, with developer-measured speeds of up to 94 tokens a second.</p>
+  <div class="meta">2026-10-05 · EmaritesAI</div>
+  <p>A free open source project called Strata is drawing attention for running Qwen3.8-Flash-Next, a large model that normally needs a server, on a home gaming PC. It reached the top of Hacker News over the weekend with more than 600 points.</p><p>The project describes the model as having 125 billion parameters. It is a mixture-of-experts design with 24,576 small expert modules, of which only 10 are used for each word. Strata keeps the busiest parts on the graphics card and the rest in system memory, and uses compressed versions of the model at 2 to 4 bits.</p><p>The requirements are a graphics card with at least 12GB of memory, from NVIDIA&#39;s RTX 20 to 50 series or AMD&#39;s RX 7000 and 9000 series, 32GB of RAM and about 80GB of disk space. It runs on Windows and Linux.</p><p>According to the developers&#39; own tests, an RTX 5070 with 12GB wrote answers at up to 94 tokens a second and read prompts at 2,650 tokens a second. An AMD RX 9070 XT reached 60 tokens a second for writing.</p><p>Strata exposes a local endpoint compatible with OpenAI&#39;s and Anthropic&#39;s APIs, so coding agents and chat apps can connect to it, and the project says nothing leaves the PC. It is released under the MIT license and is not affiliated with Alibaba&#39;s Qwen team.</p><p>The first start can freeze the PC for a few minutes while it loads 35 to 55GB into memory.</p>
+  
+  
+  
+  <div class="points"><strong>3 things to know</strong>
+    <ol><li>Needs a 12GB GPU, 32GB of RAM and about 80GB of disk</li><li>Developers measured up to 94 tokens per second on an RTX 5070</li><li>Free under the MIT license, with OpenAI- and Anthropic-style local APIs</li></ol>
+  </div>
+  
+  <div class="media">
+    
+      
+    
+      
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-05_06/slide_03_numbers_en.jpg" alt="Strata runs Qwen&#39;s giant model on a 12GB gaming GPU">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-05_06/slide_04_numbers_ar.jpg" alt="Strata runs Qwen&#39;s giant model on a 12GB gaming GPU">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-05_06/slide_05_outro.jpg" alt="Strata runs Qwen&#39;s giant model on a 12GB gaming GPU">
+    
+  </div>
+  
+  <div class="sources"><strong>Sources:</strong>
+    <a href="https://github.com/Niko1221/Strata" target="_blank" rel="noopener nofollow">Strata (GitHub)</a>, <a href="https://news.ycombinator.com/item?id=49953495" target="_blank" rel="noopener nofollow">Hacker News discussion</a>, <a href="https://huggingface.co/Qwen/Qwen3.8-Flash-Next" target="_blank" rel="noopener nofollow">Qwen3.8-Flash-Next (Hugging Face)</a>
+  </div>
+  <div class="sources" style="margin-top:10px">
+    <div class="fact">⚠️ Requirements: 12GB GPU, 32GB RAM, ~80GB disk, Windows/Linux, MIT license</div><div class="fact">⚠️ Speeds: RTX 5070 up to 94 t/s write, 2,650 t/s read; RX 9070 XT 60 t/s</div><div class="fact">❗ Model size 125B parameters</div><div class="fact">⚠️ 24,576 experts, 10 used per word</div><div class="fact">⚠️ 600+ Hacker News points</div>
+  </div>
+</article>
+
+<footer>EmaritesAI · AI &amp; tech, explained daily · @emaritesai</footer>
+</div>
+</body>
+</html>
