@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>كيف تعمل النماذج الكبيرة على حاسوب ألعاب؟ التكميم — EmaritesAI</title>
+<meta name="description" content="التكميم يعني تخزين أوزان النموذج بعدد أقل من البتات، فيحتاج إلى ذاكرة أقل بكثير. وبفضله يمكن أن يصغر نموذج من 16 جيجابايت إلى نحو 5 جيجابايت ويعمل على حاسوب محمول، مع بعض الخسارة في الجودة عند أدنى الدقات.">
+<meta property="og:image" content="https://abahanad69.github.io/emaritesai/media/2026-10-05_05/slide_01_cover_en.jpg">
+<meta property="og:title" content="كيف تعمل النماذج الكبيرة على حاسوب ألعاب؟ التكميم">
+<meta property="og:description" content="التكميم يعني تخزين أوزان النموذج بعدد أقل من البتات، فيحتاج إلى ذاكرة أقل بكثير. وبفضله يمكن أن يصغر نموذج من 16 جيجابايت إلى نحو 5 جيجابايت ويعمل على حاسوب محمول، مع بعض الخسارة في الجودة عند أدنى الدقات.">
+<link rel="alternate" type="application/rss+xml" title="EmaritesAI" href="https://abahanad69.github.io/emaritesai/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+Arabic:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B0F19;--bg2:#141B2D;--accent:#4F8CFF;--accent2:#9B5CFF;--text:#FFFFFF;--muted:#9AA4B8}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(160deg,var(--bg),var(--bg2));color:var(--text);font-family:Inter,"Noto Sans Arabic",system-ui,sans-serif;min-height:100vh}
+html[dir=rtl] body{font-family:"Noto Sans Arabic",Inter,system-ui,sans-serif}
+a{color:var(--accent);text-decoration:none}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px 60px}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:22px;color:var(--text)}
+.logo i{display:inline-block;width:34px;height:34px;border-radius:9px;background:var(--accent);color:#fff;font-style:normal;text-align:center;line-height:34px;font-weight:800}
+nav a{margin-inline-start:16px;color:var(--muted);font-weight:600}
+nav a.active{color:var(--text)}
+.tag{display:inline-block;background:var(--accent);color:#fff;border-radius:999px;padding:4px 12px;font-size:12px;font-weight:600}
+.card{display:block;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08);color:var(--text)}
+.card h2{margin:10px 0 6px;font-size:24px;line-height:1.25}
+.card p{margin:0;color:var(--muted)}
+.meta{color:var(--muted);font-size:13px;margin-top:8px}
+article h1{font-size:38px;line-height:1.15;margin:18px 0 8px}
+article .sub{font-size:20px;color:var(--muted);margin:0 0 20px}
+article p{font-size:18px;line-height:1.7}
+.points{background:rgba(255,255,255,.05);border-radius:16px;padding:18px 24px;margin:24px 0}
+.points li{margin:8px 0;font-size:17px}
+.spec{width:100%;border-collapse:collapse;margin:10px 0;font-size:16px}.spec th,.spec td{padding:7px 8px;border-bottom:1px solid rgba(255,255,255,.08);text-align:start}.spec th{color:#9AA4B8;font-weight:600;width:36%}.spec td:last-child{text-align:end;font-variant-numeric:tabular-nums}.points small{color:#9AA4B8}
+.media{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:24px 0}
+.media img,.media video{width:100%;border-radius:12px;display:block}
+.sources{font-size:14px;color:var(--muted)}
+.fact{font-size:14px;margin:4px 0}
+footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="https://abahanad69.github.io/emaritesai/ar/"><i>E</i>EmaritesAI</a>
+  <nav>
+    <a href="https://abahanad69.github.io/emaritesai/en/quantization-explained-shrinking-ai-models/" class="">EN</a>
+    <a href="https://abahanad69.github.io/emaritesai/ar/quantization-explained-shrinking-ai-models/" class="active">العربية</a>
+    <a href="https://instagram.com/emaritesai" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+</header>
+
+<article>
+  <span class="tag">الذكاء الاصطناعي ببساطة</span>
+  <h1>كيف تعمل النماذج الكبيرة على حاسوب ألعاب؟ التكميم</h1>
+  <p class="sub">تخزين كل رقم بعدد أقل من البتات يخفض الذاكرة حتى ثلاثة أرباع، مقابل خسارة بسيطة في الدقة.</p>
+  <div class="meta">2026-10-05 · EmaritesAI</div>
+  <p>النموذج اللغوي في جوهره قائمة ضخمة من الأرقام تسمى الأوزان، وتخزن عادة بدقة 16 بت لكل رقم، أي أن كل مليار وزن يحتاج إلى نحو 2 جيجابايت من الذاكرة.</p><p>والتكميم يعني تخزين هذه الأرقام بعدد أقل من البتات: 8 أو 4 أو حتى 2 أو 3. والانتقال من 16 بت إلى 4 بت يخفض الذاكرة المطلوبة بنحو ثلاثة أرباع. ويوضح نموذج DiarizationLM الجديد من جوجل ذلك: النسخة الكاملة بدقة 16 بت حجمها نحو 16 جيجابايت، بينما ملف 4 بت نحو 5.3 جيجابايت.</p><p>والثمن هو الدقة، فتقريب الأرقام يفقدها بعض التفاصيل، وقد تتراجع جودة الإجابات قليلا. وعند 8 و4 بت تكون الخسارة صغيرة عادة، أما عند 2 أو 3 بت فتصبح أوضح، ولهذا تعاير بعض الطرق النموذج على بيانات نموذجية أولا.</p><p>وتظهر الدقة في أسماء الملفات، إذ تستخدم أدوات مثل llama.cpp وOllama صيغة GGUF مع رموز مثل Q4_K_M أو IQ3_S تصف عدد البتات والطريقة. ويستخدم مشروع Strata المفتوح نسخا بين 2 و4 بت لتشغيل نموذج Qwen كبير جدا على بطاقة رسوميات بذاكرة 12 جيجابايت.</p><p>وقبل تنزيل نموذج محلي، قارن حجم الملف بذاكرة بطاقة الرسوميات والذاكرة العشوائية لديك، وابدأ بنسخة 4 بت.</p>
+  
+  <div class="points"><strong>الفكرة ببساطة</strong>
+    <ol><li>احسب البتات: بدقة 16 بت يحتاج كل مليار وزن إلى نحو 2 جيجابايت.</li><li>اقرأ اسم الملف: رموز مثل Q4_K_M أو IQ3_S تحدد عدد البتات والطريقة.</li><li>ابدأ بـ4 بت: تحافظ عادة على جودة قريبة من الأصل بربع الحجم.</li><li>انزل أكثر عند الحاجة: ملفات 2 و3 بت تناسب أجهزة أصغر لكنها أقل دقة.</li><li>افحص جهازك: قارن حجم الملف بذاكرة بطاقة الرسوميات والذاكرة العشوائية.</li></ol>
+  </div>
+  
+  
+  
+  <div class="points"><strong>3 نقاط أساسية</strong>
+    <ol><li>التكميم يخزن أوزان النموذج بعدد أقل من البتات لتوفير الذاكرة</li><li>الانتقال من 16 بت إلى 4 بت يخفض الذاكرة بنحو ثلاثة أرباع</li><li>تحت 4 بت تتراجع جودة الإجابات بشكل أوضح</li></ol>
+  </div>
+  
+  <div class="media">
+    
+      
+    
+      
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-05_05/slide_03_steps_en.jpg" alt="كيف تعمل النماذج الكبيرة على حاسوب ألعاب؟ التكميم">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-05_05/slide_04_steps_ar.jpg" alt="كيف تعمل النماذج الكبيرة على حاسوب ألعاب؟ التكميم">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-05_05/slide_05_outro.jpg" alt="كيف تعمل النماذج الكبيرة على حاسوب ألعاب؟ التكميم">
+    
+  </div>
+  
+  <div class="sources"><strong>المصادر:</strong>
+    <a href="https://huggingface.co/docs/transformers/main/en/quantization/overview" target="_blank" rel="noopener nofollow">Hugging Face Transformers docs: Quantization overview</a>, <a href="https://huggingface.co/google/DiarizationLM-Gemma-4-E4B-v1" target="_blank" rel="noopener nofollow">Google DiarizationLM-Gemma-4-E4B model card</a>, <a href="https://github.com/Niko1221/Strata" target="_blank" rel="noopener nofollow">Strata (GitHub)</a>
+  </div>
+  <div class="sources" style="margin-top:10px">
+    <div class="fact">✅ Quantization stores weights in lower precision (8, 4, 1-3 bits) to cut memory; extreme compression needs calibration</div><div class="fact">✅ 16-bit = 2 bytes per weight, so ~2GB per billion weights; 4-bit is ~1/4</div><div class="fact">⚠️ DiarizationLM bf16 ~16GB vs Q4_K_M ~5.3GB</div><div class="fact">⚠️ Strata uses 2- to 4-bit versions on 12GB GPUs</div>
+  </div>
+</article>
+
+<footer>EmaritesAI · الذكاء الاصطناعي والتقنية، يومياً · @emaritesai</footer>
+</div>
+</body>
+</html>

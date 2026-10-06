@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How do big AI models fit on a gaming PC? Quantization — EmaritesAI</title>
+<meta name="description" content="Quantization stores an AI model&#39;s weights in fewer bits, so it needs far less memory. It is why a 16GB model can shrink to about 5GB and run on a laptop, with some loss in quality at the lowest bit widths.">
+<meta property="og:image" content="https://abahanad69.github.io/emaritesai/media/2026-10-05_05/slide_01_cover_en.jpg">
+<meta property="og:title" content="How do big AI models fit on a gaming PC? Quantization">
+<meta property="og:description" content="Quantization stores an AI model&#39;s weights in fewer bits, so it needs far less memory. It is why a 16GB model can shrink to about 5GB and run on a laptop, with some loss in quality at the lowest bit widths.">
+<link rel="alternate" type="application/rss+xml" title="EmaritesAI" href="https://abahanad69.github.io/emaritesai/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+Arabic:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B0F19;--bg2:#141B2D;--accent:#4F8CFF;--accent2:#9B5CFF;--text:#FFFFFF;--muted:#9AA4B8}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(160deg,var(--bg),var(--bg2));color:var(--text);font-family:Inter,"Noto Sans Arabic",system-ui,sans-serif;min-height:100vh}
+html[dir=rtl] body{font-family:"Noto Sans Arabic",Inter,system-ui,sans-serif}
+a{color:var(--accent);text-decoration:none}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px 60px}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:22px;color:var(--text)}
+.logo i{display:inline-block;width:34px;height:34px;border-radius:9px;background:var(--accent);color:#fff;font-style:normal;text-align:center;line-height:34px;font-weight:800}
+nav a{margin-inline-start:16px;color:var(--muted);font-weight:600}
+nav a.active{color:var(--text)}
+.tag{display:inline-block;background:var(--accent);color:#fff;border-radius:999px;padding:4px 12px;font-size:12px;font-weight:600}
+.card{display:block;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08);color:var(--text)}
+.card h2{margin:10px 0 6px;font-size:24px;line-height:1.25}
+.card p{margin:0;color:var(--muted)}
+.meta{color:var(--muted);font-size:13px;margin-top:8px}
+article h1{font-size:38px;line-height:1.15;margin:18px 0 8px}
+article .sub{font-size:20px;color:var(--muted);margin:0 0 20px}
+article p{font-size:18px;line-height:1.7}
+.points{background:rgba(255,255,255,.05);border-radius:16px;padding:18px 24px;margin:24px 0}
+.points li{margin:8px 0;font-size:17px}
+.spec{width:100%;border-collapse:collapse;margin:10px 0;font-size:16px}.spec th,.spec td{padding:7px 8px;border-bottom:1px solid rgba(255,255,255,.08);text-align:start}.spec th{color:#9AA4B8;font-weight:600;width:36%}.spec td:last-child{text-align:end;font-variant-numeric:tabular-nums}.points small{color:#9AA4B8}
+.media{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:24px 0}
+.media img,.media video{width:100%;border-radius:12px;display:block}
+.sources{font-size:14px;color:var(--muted)}
+.fact{font-size:14px;margin:4px 0}
+footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="https://abahanad69.github.io/emaritesai/en/"><i>E</i>EmaritesAI</a>
+  <nav>
+    <a href="https://abahanad69.github.io/emaritesai/en/quantization-explained-shrinking-ai-models/" class="active">EN</a>
+    <a href="https://abahanad69.github.io/emaritesai/ar/quantization-explained-shrinking-ai-models/" class="">العربية</a>
+    <a href="https://instagram.com/emaritesai" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+</header>
+
+<article>
+  <span class="tag">AI Explained</span>
+  <h1>How do big AI models fit on a gaming PC? Quantization</h1>
+  <p class="sub">Storing each number in fewer bits cuts memory by up to three quarters, at a small cost in accuracy.</p>
+  <div class="meta">2026-10-05 · EmaritesAI</div>
+  <p>An AI model is mostly a huge list of numbers called weights. They are usually stored at 16 bits each, so every billion weights takes about 2GB of memory.</p><p>Quantization stores those numbers with fewer bits: 8, 4 or even 2 or 3. Going from 16 bits to 4 cuts the memory needed by about three quarters. Google&#39;s new DiarizationLM model shows the effect: the full 16-bit version is about 16GB, while its 4-bit file is about 5.3GB.</p><p>The trade-off is precision. Rounding numbers loses detail, and the model&#39;s answers can get slightly worse. At 8 and 4 bits the loss is usually small. At 2 or 3 bits it becomes more noticeable, which is why some methods calibrate on sample data first.</p><p>You see quantization in file names. Tools like llama.cpp and Ollama use the GGUF format, with labels such as Q4_K_M or IQ3_S that describe the bit width and method. Strata, a new open source project, uses 2- to 4-bit versions to run a very large Qwen model on a 12GB graphics card.</p><p>Before downloading a local model, compare the file size with your graphics card memory and RAM, and start with a 4-bit version.</p>
+  
+  <div class="points"><strong>Explained simply</strong>
+    <ol><li>Count the bits: At 16 bits, each billion weights needs about 2GB of memory.</li><li>Read the file name: Labels like Q4_K_M or IQ3_S tell you the bit width and method.</li><li>Start at 4 bits: It usually keeps quality close to the original at a quarter of the size.</li><li>Go lower only if needed: 2- and 3-bit files fit smaller machines but lose more accuracy.</li><li>Check your hardware: Compare file size with your GPU memory and RAM before downloading.</li></ol>
+  </div>
+  
+  
+  
+  <div class="points"><strong>3 things to know</strong>
+    <ol><li>Quantization stores model weights in fewer bits to save memory</li><li>16-bit to 4-bit cuts the memory needed by about three quarters</li><li>Below 4 bits, answer quality drops more noticeably</li></ol>
+  </div>
+  
+  <div class="media">
+    
+      
+    
+      
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-05_05/slide_03_steps_en.jpg" alt="How do big AI models fit on a gaming PC? Quantization">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-05_05/slide_04_steps_ar.jpg" alt="How do big AI models fit on a gaming PC? Quantization">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-05_05/slide_05_outro.jpg" alt="How do big AI models fit on a gaming PC? Quantization">
+    
+  </div>
+  
+  <div class="sources"><strong>Sources:</strong>
+    <a href="https://huggingface.co/docs/transformers/main/en/quantization/overview" target="_blank" rel="noopener nofollow">Hugging Face Transformers docs: Quantization overview</a>, <a href="https://huggingface.co/google/DiarizationLM-Gemma-4-E4B-v1" target="_blank" rel="noopener nofollow">Google DiarizationLM-Gemma-4-E4B model card</a>, <a href="https://github.com/Niko1221/Strata" target="_blank" rel="noopener nofollow">Strata (GitHub)</a>
+  </div>
+  <div class="sources" style="margin-top:10px">
+    <div class="fact">✅ Quantization stores weights in lower precision (8, 4, 1-3 bits) to cut memory; extreme compression needs calibration</div><div class="fact">✅ 16-bit = 2 bytes per weight, so ~2GB per billion weights; 4-bit is ~1/4</div><div class="fact">⚠️ DiarizationLM bf16 ~16GB vs Q4_K_M ~5.3GB</div><div class="fact">⚠️ Strata uses 2- to 4-bit versions on 12GB GPUs</div>
+  </div>
+</article>
+
+<footer>EmaritesAI · AI &amp; tech, explained daily · @emaritesai</footer>
+</div>
+</body>
+</html>
