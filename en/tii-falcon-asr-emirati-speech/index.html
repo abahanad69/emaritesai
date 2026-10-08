@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TII releases Falcon-ASR, a 1.6B speech model tuned for Emirati — EmaritesAI</title>
+<meta name="description" content="TII has released Falcon-ASR, a 1.6 billion parameter model that turns speech into text in Arabic, with a focus on the Emirati dialect, plus English, French, Spanish and Portuguese. A demo is live on Hugging Face; API access and apps are planned.">
+<meta property="og:image" content="https://abahanad69.github.io/emaritesai/media/2026-10-08_12/slide_01_cover_en.jpg">
+<meta property="og:title" content="TII releases Falcon-ASR, a 1.6B speech model tuned for Emirati">
+<meta property="og:description" content="TII has released Falcon-ASR, a 1.6 billion parameter model that turns speech into text in Arabic, with a focus on the Emirati dialect, plus English, French, Spanish and Portuguese. A demo is live on Hugging Face; API access and apps are planned.">
+<link rel="alternate" type="application/rss+xml" title="EmaritesAI" href="https://abahanad69.github.io/emaritesai/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+Arabic:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B0F19;--bg2:#141B2D;--accent:#4F8CFF;--accent2:#9B5CFF;--text:#FFFFFF;--muted:#9AA4B8}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(160deg,var(--bg),var(--bg2));color:var(--text);font-family:Inter,"Noto Sans Arabic",system-ui,sans-serif;min-height:100vh}
+html[dir=rtl] body{font-family:"Noto Sans Arabic",Inter,system-ui,sans-serif}
+a{color:var(--accent);text-decoration:none}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px 60px}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:22px;color:var(--text)}
+.logo i{display:inline-block;width:34px;height:34px;border-radius:9px;background:var(--accent);color:#fff;font-style:normal;text-align:center;line-height:34px;font-weight:800}
+nav a{margin-inline-start:16px;color:var(--muted);font-weight:600}
+nav a.active{color:var(--text)}
+.tag{display:inline-block;background:var(--accent);color:#fff;border-radius:999px;padding:4px 12px;font-size:12px;font-weight:600}
+.card{display:block;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08);color:var(--text)}
+.card h2{margin:10px 0 6px;font-size:24px;line-height:1.25}
+.card p{margin:0;color:var(--muted)}
+.meta{color:var(--muted);font-size:13px;margin-top:8px}
+article h1{font-size:38px;line-height:1.15;margin:18px 0 8px}
+article .sub{font-size:20px;color:var(--muted);margin:0 0 20px}
+article p{font-size:18px;line-height:1.7}
+.points{background:rgba(255,255,255,.05);border-radius:16px;padding:18px 24px;margin:24px 0}
+.points li{margin:8px 0;font-size:17px}
+.spec{width:100%;border-collapse:collapse;margin:10px 0;font-size:16px}.spec th,.spec td{padding:7px 8px;border-bottom:1px solid rgba(255,255,255,.08);text-align:start}.spec th{color:#9AA4B8;font-weight:600;width:36%}.spec td:last-child{text-align:end;font-variant-numeric:tabular-nums}.points small{color:#9AA4B8}
+.media{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:24px 0}
+.media img,.media video{width:100%;border-radius:12px;display:block}
+.sources{font-size:14px;color:var(--muted)}
+.fact{font-size:14px;margin:4px 0}
+footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="https://abahanad69.github.io/emaritesai/en/"><i>E</i>EmaritesAI</a>
+  <nav>
+    <a href="https://abahanad69.github.io/emaritesai/en/tii-falcon-asr-emirati-speech/" class="active">EN</a>
+    <a href="https://abahanad69.github.io/emaritesai/ar/tii-falcon-asr-emirati-speech/" class="">العربية</a>
+    <a href="https://instagram.com/emaritesai" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+</header>
+
+<article>
+  <span class="tag">AI Models</span>
+  <h1>TII releases Falcon-ASR, a 1.6B speech model tuned for Emirati</h1>
+  <p class="sub">Abu Dhabi&#39;s Technology Innovation Institute says its new model beats the best published Arabic leaderboard average by 2.25 points.</p>
+  <div class="meta">2026-10-08 · EmaritesAI</div>
+  <p>The Technology Innovation Institute (TII) in Abu Dhabi released Falcon-ASR on 7 October, a speech recognition model with 1.6 billion parameters. It is built mainly for Arabic, with particular attention to the Emirati dialect, and the same weights also handle English, French, Spanish and Portuguese without a language setting.</p><p>TII measured it on the Open Universal Arabic ASR Leaderboard, run by the ELM Research Center, which averages six Arabic test sets. Falcon-ASR scored a word error rate (WER) of 20.92%, meaning roughly one word in five is wrong, against 23.17% for the best published result in the snapshot TII checked on 30 September. Lower is better.</p><p>On TII&#39;s own Emirati test set, built from held-out recordings with human-checked transcripts, the model reached 22.73% WER and 10.19% character error rate, 4.07 points better than Qwen3-Omni, the next system in TII&#39;s comparison. In English it averaged 5.74% WER across the seven test sets used by Hugging Face&#39;s Open ASR Leaderboard.</p><p>TII says it trained on Emirati speech, Modern Standard Arabic, other Gulf and Arabic dialects and English, and added noise, overlapping voices, music, echo and phone-line effects so the model copes with real meetings and calls. It also returns word-level timestamps.</p><p>For now, the public route is a demo on Hugging Face. TII says API access and native apps are coming; the announcement does not link downloadable weights or name a licence.</p>
+  
+  
+  <div class="points"><strong>Spec sheet</strong>
+    <table class="spec">
+      <tr><th>Model</th><td>Falcon-ASR · TII (Abu Dhabi)</td></tr>
+      <tr><th>Type</th><td>Speech recognition model</td></tr>
+      <tr><th>Released</th><td>2026-10-07</td></tr>
+      
+      
+      <tr><th>Where to use it</th><td>Demo on Hugging Face; API and apps planned</td></tr>
+      <tr><th>Arabic WER (6 test sets)</th><td>20.92% <small>(TII, vendor-reported)</small></td></tr><tr><th>Emirati WER (TII test)</th><td>22.73% <small>(TII, vendor-reported)</small></td></tr><tr><th>English WER (7 sets)</th><td>5.74% <small>(TII, vendor-reported)</small></td></tr><tr><th>Parameters</th><td>1.6B <small>(TII)</small></td></tr>
+    </table>
+  </div>
+  
+  
+  <div class="points"><strong>3 things to know</strong>
+    <ol><li>Falcon-ASR is a 1.6B speech-to-text model from Abu Dhabi&#39;s TII</li><li>TII reports 20.92% Arabic WER vs 23.17% best published result</li><li>It handles Emirati, Arabic, English, French, Spanish, Portuguese</li></ol>
+  </div>
+  
+  <div class="media">
+    
+      
+    
+      
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-08_12/slide_03_specs_en.jpg" alt="TII releases Falcon-ASR, a 1.6B speech model tuned for Emirati">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-08_12/slide_04_specs_ar.jpg" alt="TII releases Falcon-ASR, a 1.6B speech model tuned for Emirati">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-08_12/slide_05_numbers_en.jpg" alt="TII releases Falcon-ASR, a 1.6B speech model tuned for Emirati">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-08_12/slide_06_numbers_ar.jpg" alt="TII releases Falcon-ASR, a 1.6B speech model tuned for Emirati">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-08_12/slide_07_outro.jpg" alt="TII releases Falcon-ASR, a 1.6B speech model tuned for Emirati">
+    
+  </div>
+  
+  <div class="sources"><strong>Sources:</strong>
+    <a href="https://huggingface.co/blog/tiiuae/falcon-asr" target="_blank" rel="noopener nofollow">TII on Hugging Face: Introducing Falcon ASR</a>, <a href="https://huggingface.co/spaces/tiiuae/falcon-asr-demo" target="_blank" rel="noopener nofollow">Falcon-ASR demo Space</a>
+  </div>
+  <div class="sources" style="margin-top:10px">
+    <div class="fact">⚠️ Falcon-ASR released 7 Oct 2026 with 1.6B parameters, five languages</div><div class="fact">⚠️ 20.92% Arabic WER vs 23.17% best published; 22.73% Emirati WER; 5.74% English WER</div><div class="fact">⚠️ Demo available; API and apps planned; no weights or licence named</div>
+  </div>
+</article>
+
+<footer>EmaritesAI · AI &amp; tech, explained daily · @emaritesai</footer>
+</div>
+</body>
+</html>
