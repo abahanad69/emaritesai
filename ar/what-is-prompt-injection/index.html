@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ما حقن الأوامر ولماذا يزيده وكلاء الذكاء الاصطناعي خطورة؟ — EmaritesAI</title>
+<meta name="description" content="حقن الأوامر هو أن يغير نص يقرؤه الذكاء الاصطناعي سلوكه بطريقة غير مقصودة، وتصنفه OWASP أول خطر على التطبيقات المبنية على النماذج اللغوية الكبيرة.">
+<meta property="og:image" content="https://abahanad69.github.io/emaritesai/media/2026-10-09_04/slide_01_cover_en.jpg">
+<meta property="og:title" content="ما حقن الأوامر ولماذا يزيده وكلاء الذكاء الاصطناعي خطورة؟">
+<meta property="og:description" content="حقن الأوامر هو أن يغير نص يقرؤه الذكاء الاصطناعي سلوكه بطريقة غير مقصودة، وتصنفه OWASP أول خطر على التطبيقات المبنية على النماذج اللغوية الكبيرة.">
+<link rel="alternate" type="application/rss+xml" title="EmaritesAI" href="https://abahanad69.github.io/emaritesai/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+Arabic:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B0F19;--bg2:#141B2D;--accent:#4F8CFF;--accent2:#9B5CFF;--text:#FFFFFF;--muted:#9AA4B8}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(160deg,var(--bg),var(--bg2));color:var(--text);font-family:Inter,"Noto Sans Arabic",system-ui,sans-serif;min-height:100vh}
+html[dir=rtl] body{font-family:"Noto Sans Arabic",Inter,system-ui,sans-serif}
+a{color:var(--accent);text-decoration:none}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px 60px}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:22px;color:var(--text)}
+.logo i{display:inline-block;width:34px;height:34px;border-radius:9px;background:var(--accent);color:#fff;font-style:normal;text-align:center;line-height:34px;font-weight:800}
+nav a{margin-inline-start:16px;color:var(--muted);font-weight:600}
+nav a.active{color:var(--text)}
+.tag{display:inline-block;background:var(--accent);color:#fff;border-radius:999px;padding:4px 12px;font-size:12px;font-weight:600}
+.card{display:block;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08);color:var(--text)}
+.card h2{margin:10px 0 6px;font-size:24px;line-height:1.25}
+.card p{margin:0;color:var(--muted)}
+.meta{color:var(--muted);font-size:13px;margin-top:8px}
+article h1{font-size:38px;line-height:1.15;margin:18px 0 8px}
+article .sub{font-size:20px;color:var(--muted);margin:0 0 20px}
+article p{font-size:18px;line-height:1.7}
+.points{background:rgba(255,255,255,.05);border-radius:16px;padding:18px 24px;margin:24px 0}
+.points li{margin:8px 0;font-size:17px}
+.spec{width:100%;border-collapse:collapse;margin:10px 0;font-size:16px}.spec th,.spec td{padding:7px 8px;border-bottom:1px solid rgba(255,255,255,.08);text-align:start}.spec th{color:#9AA4B8;font-weight:600;width:36%}.spec td:last-child{text-align:end;font-variant-numeric:tabular-nums}.points small{color:#9AA4B8}
+.media{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:24px 0}
+.media img,.media video{width:100%;border-radius:12px;display:block}
+.sources{font-size:14px;color:var(--muted)}
+.fact{font-size:14px;margin:4px 0}
+footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="https://abahanad69.github.io/emaritesai/ar/"><i>E</i>EmaritesAI</a>
+  <nav>
+    <a href="https://abahanad69.github.io/emaritesai/en/what-is-prompt-injection/" class="">EN</a>
+    <a href="https://abahanad69.github.io/emaritesai/ar/what-is-prompt-injection/" class="active">العربية</a>
+    <a href="https://instagram.com/emaritesai" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+</header>
+
+<article>
+  <span class="tag">الذكاء الاصطناعي ببساطة</span>
+  <h1>ما حقن الأوامر ولماذا يزيده وكلاء الذكاء الاصطناعي خطورة؟</h1>
+  <p class="sub">تعليمات مخفية في صفحة ويب أو ملف قد توجه المساعد الذكي، ويزداد الخطر حين يصبح قادرا على التصرف نيابة عنك.</p>
+  <div class="meta">2026-10-09 · EmaritesAI</div>
+  <p>يحدث حقن الأوامر عندما يغير نص يقرؤه نموذج الذكاء الاصطناعي سلوكه بطريقة لم يقصدها المستخدم أو المطور. وتضعه مؤسسة OWASP الأمنية في المرتبة الأولى ضمن قائمتها لعام 2025 لأهم عشرة مخاطر على التطبيقات المبنية على النماذج اللغوية الكبيرة.</p><p>وهو نوعان: الحقن المباشر، حين يحاول الشخص الذي يكتب إقناع النموذج بتجاوز قواعده، والحقن غير المباشر، حين تختبئ التعليمات داخل محتوى يعالجه النموذج مثل صفحة ويب أو بريد إلكتروني أو ملف PDF. وتشير OWASP إلى أن النص قد ينجح حتى لو لم يره البشر، ما دام النموذج يقرؤه.</p><p>ويزداد الخطر مع وكلاء الذكاء الاصطناعي، فروبوت المحادثة الذي يكتب نصا فقط قد يُخدع ليعطي إجابة سيئة، أما الوكيل القادر على إرسال الرسائل والتصفح وتعديل الملفات وتشغيل الشيفرات فقد يُخدع ليقوم بفعل ما.</p><p>ولا يوجد حل كامل، لذلك تأتي الحماية على طبقات. وتوصي OWASP بمنح النموذج الصلاحيات التي يحتاجها فقط، ووسم المحتوى غير الموثوق بوضوح، وفحص المخرجات ببرمجيات تقليدية، وطلب موافقة بشرية قبل الأفعال الخطرة. وتضيف بعض الشركات أدوات مراقبة فوق ذلك، فقد أطلقت Goodfire هذا الأسبوع مجسات تراقب النشاط الداخلي للنموذج، وقالت إنها رصدت 94% من جلسات الاختراق الخبيثة في اختباراتها.</p>
+  
+  <div class="points"><strong>الفكرة ببساطة</strong>
+    <ol><li>الفكرة الأساسية: نص يقرؤه الذكاء الاصطناعي يحاول تجاوز ما طلبه المستخدم أو المطور.</li><li>مباشر: الشخص الذي يكتب يحاول إقناع النموذج بتجاوز قواعده.</li><li>غير مباشر: تعليمات مخبأة في صفحة ويب أو بريد أو ملف يعالجه النموذج.</li><li>الوكلاء يرفعون الخطر: ذكاء قادر على الإرسال والتصفح قد يُخدع ليتصرف.</li><li>حماية على طبقات: أقل صلاحيات ووسم المدخلات وفحص المخرجات وموافقة بشرية.</li></ol>
+  </div>
+  
+  
+  
+  <div class="points"><strong>3 نقاط أساسية</strong>
+    <ol><li>حقن الأوامر نص يختطف ما طُلب من الذكاء الاصطناعي فعله</li><li>OWASP تصنفه أول خطر على تطبيقات النماذج اللغوية (2025)</li><li>الوكلاء القادرون على الفعل يرفعون الخطر والحماية على طبقات</li></ol>
+  </div>
+  
+  <div class="media">
+    
+      
+    
+      
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-09_04/slide_03_steps_en.jpg" alt="ما حقن الأوامر ولماذا يزيده وكلاء الذكاء الاصطناعي خطورة؟">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-09_04/slide_04_steps_ar.jpg" alt="ما حقن الأوامر ولماذا يزيده وكلاء الذكاء الاصطناعي خطورة؟">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-09_04/slide_05_outro.jpg" alt="ما حقن الأوامر ولماذا يزيده وكلاء الذكاء الاصطناعي خطورة؟">
+    
+  </div>
+  
+  <div class="sources"><strong>المصادر:</strong>
+    <a href="https://genai.owasp.org/llmrisk/llm01-prompt-injection/" target="_blank" rel="noopener nofollow">OWASP GenAI: LLM01 Prompt Injection</a>, <a href="https://techcrunch.com/2026/10/08/goodfire-says-its-new-inside-out-monitors-catch-rogue-ai-agents-at-a-fraction-of-the-cost/" target="_blank" rel="noopener nofollow">TechCrunch: Goodfire monitors</a>
+  </div>
+  <div class="sources" style="margin-top:10px">
+    <div class="fact">⚠️ Prompt injection is LLM01 in the OWASP Top 10 for LLM Applications 2025; direct vs indirect; mitigations</div><div class="fact">⚠️ Goodfire probes caught 94% of malicious hacking sessions in its tests</div>
+  </div>
+</article>
+
+<footer>EmaritesAI · الذكاء الاصطناعي والتقنية، يومياً · @emaritesai</footer>
+</div>
+</body>
+</html>
