@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How does Arena rank AI models from blind votes? — EmaritesAI</title>
+<meta name="description" content="Arena ranks chatbots by letting people compare two anonymous answers and pick the better one. A statistical model turns those pairwise votes into scores with confidence ranges, which is why close scores often mean a tie.">
+<meta property="og:image" content="https://abahanad69.github.io/emaritesai/media/2026-10-09_13/slide_01_cover_en.jpg">
+<meta property="og:title" content="How does Arena rank AI models from blind votes?">
+<meta property="og:description" content="Arena ranks chatbots by letting people compare two anonymous answers and pick the better one. A statistical model turns those pairwise votes into scores with confidence ranges, which is why close scores often mean a tie.">
+<link rel="alternate" type="application/rss+xml" title="EmaritesAI" href="https://abahanad69.github.io/emaritesai/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+Arabic:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B0F19;--bg2:#141B2D;--accent:#4F8CFF;--accent2:#9B5CFF;--text:#FFFFFF;--muted:#9AA4B8}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(160deg,var(--bg),var(--bg2));color:var(--text);font-family:Inter,"Noto Sans Arabic",system-ui,sans-serif;min-height:100vh}
+html[dir=rtl] body{font-family:"Noto Sans Arabic",Inter,system-ui,sans-serif}
+a{color:var(--accent);text-decoration:none}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px 60px}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:22px;color:var(--text)}
+.logo i{display:inline-block;width:34px;height:34px;border-radius:9px;background:var(--accent);color:#fff;font-style:normal;text-align:center;line-height:34px;font-weight:800}
+nav a{margin-inline-start:16px;color:var(--muted);font-weight:600}
+nav a.active{color:var(--text)}
+.tag{display:inline-block;background:var(--accent);color:#fff;border-radius:999px;padding:4px 12px;font-size:12px;font-weight:600}
+.card{display:block;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08);color:var(--text)}
+.card h2{margin:10px 0 6px;font-size:24px;line-height:1.25}
+.card p{margin:0;color:var(--muted)}
+.meta{color:var(--muted);font-size:13px;margin-top:8px}
+article h1{font-size:38px;line-height:1.15;margin:18px 0 8px}
+article .sub{font-size:20px;color:var(--muted);margin:0 0 20px}
+article p{font-size:18px;line-height:1.7}
+.points{background:rgba(255,255,255,.05);border-radius:16px;padding:18px 24px;margin:24px 0}
+.points li{margin:8px 0;font-size:17px}
+.spec{width:100%;border-collapse:collapse;margin:10px 0;font-size:16px}.spec th,.spec td{padding:7px 8px;border-bottom:1px solid rgba(255,255,255,.08);text-align:start}.spec th{color:#9AA4B8;font-weight:600;width:36%}.spec td:last-child{text-align:end;font-variant-numeric:tabular-nums}.points small{color:#9AA4B8}
+.media{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:24px 0}
+.media img,.media video{width:100%;border-radius:12px;display:block}
+.sources{font-size:14px;color:var(--muted)}
+.fact{font-size:14px;margin:4px 0}
+footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="https://abahanad69.github.io/emaritesai/en/"><i>E</i>EmaritesAI</a>
+  <nav>
+    <a href="https://abahanad69.github.io/emaritesai/en/how-arena-ranks-ai-models-blind-votes/" class="active">EN</a>
+    <a href="https://abahanad69.github.io/emaritesai/ar/how-arena-ranks-ai-models-blind-votes/" class="">العربية</a>
+    <a href="https://instagram.com/emaritesai" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+</header>
+
+<article>
+  <span class="tag">AI Explained</span>
+  <h1>How does Arena rank AI models from blind votes?</h1>
+  <p class="sub">Two anonymous answers, one vote, and a statistics model that turns millions of match-ups into a score.</p>
+  <div class="meta">2026-10-09 · EmaritesAI</div>
+  <p>Arena, the leaderboard that raised $200 million this week, ranks models by asking people which answer is better.</p><p>A visitor writes a prompt and gets two answers from two models whose names stay hidden until after the vote. The visitor picks the better answer or calls a tie. Each vote is one match-up between two models, much like a game between two chess players.</p><p>Early on, the team used Elo, the chess rating system, which updates scores after every game. In December 2023 it switched to the Bradley-Terry model, which estimates every model&#39;s strength from all votes at once. The researchers said this gives more stable ratings and tighter confidence intervals.</p><p>Those intervals matter. A new model with few votes has a wide range, so two models a few points apart can be statistically tied. The ranking also reflects what voters prefer, which can include style and length, not only correctness.</p><p>Use Arena as one signal of how people experience a model, next to task benchmarks and your own tests.</p>
+  
+  <div class="points"><strong>Explained simply</strong>
+    <ol><li>Blind match-up: You see two answers from hidden models and vote for the better one or a tie.</li><li>Pairwise data: Each vote records one model beating, losing to or tying another.</li><li>Rating model: Bradley-Terry fits all votes at once, replacing Arena&#39;s original Elo updates.</li><li>Error bars: Fewer votes mean wider confidence ranges, so check overlaps before calling a winner.</li><li>Read it right: Scores show human preference, which can reward style as well as accuracy.</li></ol>
+  </div>
+  
+  
+  
+  <div class="points"><strong>3 things to know</strong>
+    <ol><li>People vote between two anonymous answers to the same prompt</li><li>A Bradley-Terry model turns all votes into scores with error bars</li><li>Models a few points apart may be statistically tied</li></ol>
+  </div>
+  
+  <div class="media">
+    
+      
+    
+      
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-09_13/slide_03_steps_en.jpg" alt="How does Arena rank AI models from blind votes?">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-09_13/slide_04_steps_ar.jpg" alt="How does Arena rank AI models from blind votes?">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-09_13/slide_05_outro.jpg" alt="How does Arena rank AI models from blind votes?">
+    
+  </div>
+  
+  <div class="sources"><strong>Sources:</strong>
+    <a href="https://arxiv.org/abs/2403.04132" target="_blank" rel="noopener nofollow">Chatbot Arena paper (arXiv 2403.04132)</a>, <a href="https://lmsys.org/blog/2023-12-07-leaderboard/" target="_blank" rel="noopener nofollow">LMSYS: Chatbot Arena leaderboard update (Dec 2023)</a>, <a href="https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/" target="_blank" rel="noopener nofollow">TechCrunch: Arena Series B</a>
+  </div>
+  <div class="sources" style="margin-top:10px">
+    <div class="fact">✅ Arena collects pairwise human votes between two model answers</div><div class="fact">⚠️ Switched from online Elo to Bradley-Terry for more stable ratings and precise confidence intervals</div><div class="fact">⚠️ Model names hidden until after the vote</div>
+  </div>
+</article>
+
+<footer>EmaritesAI · AI &amp; tech, explained daily · @emaritesai</footer>
+</div>
+</body>
+</html>
