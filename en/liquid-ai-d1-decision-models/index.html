@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Liquid AI releases d1, open models that decide without writing text — EmaritesAI</title>
+<meta name="description" content="Liquid AI released d1-3B and d1-omni-600M on October 7 as open-weight decision models. Instead of generating tokens, they return a typed answer in a single forward pass; Liquid reports 8 ms per question for d1-3B on an RTX 4090.">
+<meta property="og:image" content="https://abahanad69.github.io/emaritesai/media/2026-10-09_12/slide_01_cover_en.jpg">
+<meta property="og:title" content="Liquid AI releases d1, open models that decide without writing text">
+<meta property="og:description" content="Liquid AI released d1-3B and d1-omni-600M on October 7 as open-weight decision models. Instead of generating tokens, they return a typed answer in a single forward pass; Liquid reports 8 ms per question for d1-3B on an RTX 4090.">
+<link rel="alternate" type="application/rss+xml" title="EmaritesAI" href="https://abahanad69.github.io/emaritesai/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+Arabic:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B0F19;--bg2:#141B2D;--accent:#4F8CFF;--accent2:#9B5CFF;--text:#FFFFFF;--muted:#9AA4B8}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(160deg,var(--bg),var(--bg2));color:var(--text);font-family:Inter,"Noto Sans Arabic",system-ui,sans-serif;min-height:100vh}
+html[dir=rtl] body{font-family:"Noto Sans Arabic",Inter,system-ui,sans-serif}
+a{color:var(--accent);text-decoration:none}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px 60px}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:22px;color:var(--text)}
+.logo i{display:inline-block;width:34px;height:34px;border-radius:9px;background:var(--accent);color:#fff;font-style:normal;text-align:center;line-height:34px;font-weight:800}
+nav a{margin-inline-start:16px;color:var(--muted);font-weight:600}
+nav a.active{color:var(--text)}
+.tag{display:inline-block;background:var(--accent);color:#fff;border-radius:999px;padding:4px 12px;font-size:12px;font-weight:600}
+.card{display:block;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08);color:var(--text)}
+.card h2{margin:10px 0 6px;font-size:24px;line-height:1.25}
+.card p{margin:0;color:var(--muted)}
+.meta{color:var(--muted);font-size:13px;margin-top:8px}
+article h1{font-size:38px;line-height:1.15;margin:18px 0 8px}
+article .sub{font-size:20px;color:var(--muted);margin:0 0 20px}
+article p{font-size:18px;line-height:1.7}
+.points{background:rgba(255,255,255,.05);border-radius:16px;padding:18px 24px;margin:24px 0}
+.points li{margin:8px 0;font-size:17px}
+.spec{width:100%;border-collapse:collapse;margin:10px 0;font-size:16px}.spec th,.spec td{padding:7px 8px;border-bottom:1px solid rgba(255,255,255,.08);text-align:start}.spec th{color:#9AA4B8;font-weight:600;width:36%}.spec td:last-child{text-align:end;font-variant-numeric:tabular-nums}.points small{color:#9AA4B8}
+.media{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:24px 0}
+.media img,.media video{width:100%;border-radius:12px;display:block}
+.sources{font-size:14px;color:var(--muted)}
+.fact{font-size:14px;margin:4px 0}
+footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="https://abahanad69.github.io/emaritesai/en/"><i>E</i>EmaritesAI</a>
+  <nav>
+    <a href="https://abahanad69.github.io/emaritesai/en/liquid-ai-d1-decision-models/" class="active">EN</a>
+    <a href="https://abahanad69.github.io/emaritesai/ar/liquid-ai-d1-decision-models/" class="">العربية</a>
+    <a href="https://instagram.com/emaritesai" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+</header>
+
+<article>
+  <span class="tag">AI Models</span>
+  <h1>Liquid AI releases d1, open models that decide without writing text</h1>
+  <p class="sub">The 3B and 600M models answer yes-or-no, multiple-choice and rating questions in one pass, aimed at fast decisions on edge devices.</p>
+  <div class="meta">2026-10-09 · EmaritesAI</div>
+  <p>Liquid AI has released d1, a family of what it calls decision models. They are open-weight and available on Hugging Face from October 7, with day-one support in llama.cpp.</p><p>Unlike chatbots, d1 models do not write text. A developer gives them a state, such as a customer message, a JSON record, an image or a short audio clip, plus named questions with fixed answer types: yes or no, one option from a list, or a rating. The model returns all the answers in a single forward pass, with no generated tokens. A support team could, for example, ask in one call whether a message requests a refund, which team should handle it and how urgent it is.</p><p>There are two models. d1-3B is built on Liquid&#39;s LFM2.5-VL-3B and accepts text and images. d1-omni-600M, which Liquid calls an early experimental release, is built on LFM2.5-Encoder-350M with added vision and audio encoders, and takes text with an image or up to 30 seconds of speech. Its model card lists a 16,384-token context.</p><p>Liquid reports that d1-3B scores 48.57 on its Decision Index 0.2.1, on par with a mixture-of-experts model about 12 times larger. It puts single-question latency for d1-3B at 8 ms on an Nvidia RTX 4090 and 50 ms on a Jetson Orin Nano. These figures come from Liquid and have not been independently tested.</p>
+  
+  
+  <div class="points"><strong>Spec sheet</strong>
+    <table class="spec">
+      <tr><th>Model</th><td>d1-3B / d1-omni-600M · Liquid AI</td></tr>
+      <tr><th>Type</th><td>Decision model (no text output)</td></tr>
+      <tr><th>Released</th><td>2026-10-07</td></tr>
+      <tr><th>Context window</th><td>16,384 (omni-600M)</td></tr>
+      <tr><th>Price</th><td>Free (open weights)</td></tr>
+      <tr><th>Where to use it</th><td>Open weights on Hugging Face, llama.cpp</td></tr>
+      <tr><th>Decision Index (d1-3B)</th><td>48.57 <small>(Liquid AI blog (vendor-reported))</small></td></tr><tr><th>Latency, RTX 4090 (d1-3B)</th><td>8 ms <small>(Liquid AI blog (vendor-reported))</small></td></tr><tr><th>Latency, Orin Nano (d1-3B)</th><td>50 ms <small>(Liquid AI blog (vendor-reported))</small></td></tr><tr><th>Audio input (omni-600M)</th><td>Up to 30 s <small>(Hugging Face model card)</small></td></tr>
+    </table>
+  </div>
+  
+  
+  <div class="points"><strong>3 things to know</strong>
+    <ol><li>d1 returns typed answers in one pass instead of generating text</li><li>Two open-weight models: d1-3B (text, images) and d1-omni-600M (plus audio)</li><li>Liquid reports 8 ms per question for d1-3B on an RTX 4090</li></ol>
+  </div>
+  
+  <div class="media">
+    
+      
+    
+      
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-09_12/slide_03_specs_en.jpg" alt="Liquid AI releases d1, open models that decide without writing text">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-09_12/slide_04_specs_ar.jpg" alt="Liquid AI releases d1, open models that decide without writing text">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-09_12/slide_05_points_en.jpg" alt="Liquid AI releases d1, open models that decide without writing text">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-09_12/slide_06_points_ar.jpg" alt="Liquid AI releases d1, open models that decide without writing text">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-09_12/slide_07_outro.jpg" alt="Liquid AI releases d1, open models that decide without writing text">
+    
+  </div>
+  
+  <div class="sources"><strong>Sources:</strong>
+    <a href="https://www.liquid.ai/blog/open-d1" target="_blank" rel="noopener nofollow">Liquid AI blog: open d1</a>, <a href="https://huggingface.co/blog/LiquidAI/open-d1" target="_blank" rel="noopener nofollow">Hugging Face: Liquid AI d1 article</a>, <a href="https://huggingface.co/LiquidAI/d1-omni-600m" target="_blank" rel="noopener nofollow">Hugging Face model card: d1-omni-600m</a>
+  </div>
+  <div class="sources" style="margin-top:10px">
+    <div class="fact">✅ d1-3B and d1-omni-600M released as open weights on Oct 7</div><div class="fact">✅ Single forward pass, typed answers, no generated tokens</div><div class="fact">⚠️ d1-3B Decision Index 48.57; latency 8 ms RTX 4090, 50 ms Orin Nano</div><div class="fact">⚠️ omni-600M: up to 30 s audio, 16,384-token context</div>
+  </div>
+</article>
+
+<footer>EmaritesAI · AI &amp; tech, explained daily · @emaritesai</footer>
+</div>
+</body>
+</html>
