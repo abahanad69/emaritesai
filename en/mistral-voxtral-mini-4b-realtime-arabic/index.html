@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mistral releases an open 4B model that transcribes Arabic live — EmaritesAI</title>
+<meta name="description" content="Mistral AI has published Voxtral Mini 4B Realtime Arabic, an open-weight streaming speech-to-text model for Arabic dialects and Modern Standard Arabic. Mistral reports an average character error rate of 8.82% across seven Arabic benchmarks at a 480 ms delay.">
+<meta property="og:image" content="https://abahanad69.github.io/emaritesai/media/2026-10-10_02/slide_01_cover_en.jpg">
+<meta property="og:title" content="Mistral releases an open 4B model that transcribes Arabic live">
+<meta property="og:description" content="Mistral AI has published Voxtral Mini 4B Realtime Arabic, an open-weight streaming speech-to-text model for Arabic dialects and Modern Standard Arabic. Mistral reports an average character error rate of 8.82% across seven Arabic benchmarks at a 480 ms delay.">
+<link rel="alternate" type="application/rss+xml" title="EmaritesAI" href="https://abahanad69.github.io/emaritesai/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+Arabic:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B0F19;--bg2:#141B2D;--accent:#4F8CFF;--accent2:#9B5CFF;--text:#FFFFFF;--muted:#9AA4B8}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(160deg,var(--bg),var(--bg2));color:var(--text);font-family:Inter,"Noto Sans Arabic",system-ui,sans-serif;min-height:100vh}
+html[dir=rtl] body{font-family:"Noto Sans Arabic",Inter,system-ui,sans-serif}
+a{color:var(--accent);text-decoration:none}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px 60px}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:22px;color:var(--text)}
+.logo i{display:inline-block;width:34px;height:34px;border-radius:9px;background:var(--accent);color:#fff;font-style:normal;text-align:center;line-height:34px;font-weight:800}
+nav a{margin-inline-start:16px;color:var(--muted);font-weight:600}
+nav a.active{color:var(--text)}
+.tag{display:inline-block;background:var(--accent);color:#fff;border-radius:999px;padding:4px 12px;font-size:12px;font-weight:600}
+.card{display:block;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08);color:var(--text)}
+.card h2{margin:10px 0 6px;font-size:24px;line-height:1.25}
+.card p{margin:0;color:var(--muted)}
+.meta{color:var(--muted);font-size:13px;margin-top:8px}
+article h1{font-size:38px;line-height:1.15;margin:18px 0 8px}
+article .sub{font-size:20px;color:var(--muted);margin:0 0 20px}
+article p{font-size:18px;line-height:1.7}
+.points{background:rgba(255,255,255,.05);border-radius:16px;padding:18px 24px;margin:24px 0}
+.points li{margin:8px 0;font-size:17px}
+.spec{width:100%;border-collapse:collapse;margin:10px 0;font-size:16px}.spec th,.spec td{padding:7px 8px;border-bottom:1px solid rgba(255,255,255,.08);text-align:start}.spec th{color:#9AA4B8;font-weight:600;width:36%}.spec td:last-child{text-align:end;font-variant-numeric:tabular-nums}.points small{color:#9AA4B8}
+.media{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:24px 0}
+.media img,.media video{width:100%;border-radius:12px;display:block}
+.sources{font-size:14px;color:var(--muted)}
+.fact{font-size:14px;margin:4px 0}
+footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="https://abahanad69.github.io/emaritesai/en/"><i>E</i>EmaritesAI</a>
+  <nav>
+    <a href="https://abahanad69.github.io/emaritesai/en/mistral-voxtral-mini-4b-realtime-arabic/" class="active">EN</a>
+    <a href="https://abahanad69.github.io/emaritesai/ar/mistral-voxtral-mini-4b-realtime-arabic/" class="">العربية</a>
+    <a href="https://instagram.com/emaritesai" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+</header>
+
+<article>
+  <span class="tag">AI Models</span>
+  <h1>Mistral releases an open 4B model that transcribes Arabic live</h1>
+  <p class="sub">Voxtral Mini 4B Realtime Arabic handles dialects, Modern Standard Arabic and speech that switches languages.</p>
+  <div class="meta">2026-10-10 · EmaritesAI</div>
+  <p>Mistral AI has released Voxtral Mini 4B Realtime Arabic, a speech-to-text model that writes Arabic as it is spoken. The weights went up on Hugging Face on October 8 under the Apache 2.0 license.</p><p>The model covers Arabic dialects as well as Modern Standard Arabic, and Mistral says it is built for messy real-world audio and for code-switching, when a speaker mixes Arabic with another language in the same sentence. That is how many people in the Gulf and North Africa talk, and it has long tripped up transcription tools. The model handles Arabic only; Mistral points users of other languages to the original Voxtral Mini 4B Realtime, from which this version was fine-tuned.</p><p>According to Mistral&#39;s model card, the model has about 4.4 billion parameters and averages an 8.82% character error rate across seven Arabic benchmarks with a 480 ms transcription delay. That is within 0.91 points of Mistral&#39;s larger Voxtral Transcribe Arabic service, which scores 7.91%. Two of the test sets, ISMA and Darija in the Wild, were built with Morocco&#39;s digital transition ministry, which announced Arabic tools developed with Mistral on September 29.</p><p>Developers can run the model with vLLM, which streams audio over a WebSocket connection, or with Hugging Face Transformers. Uses Mistral lists include live captions and voice interfaces. No hosted API price is listed for this version.</p>
+  
+  
+  <div class="points"><strong>Spec sheet</strong>
+    <table class="spec">
+      <tr><th>Model</th><td>Voxtral Mini 4B Realtime Arabic · Mistral AI</td></tr>
+      <tr><th>Type</th><td>Streaming speech-to-text</td></tr>
+      <tr><th>Released</th><td>2026-10-08</td></tr>
+      
+      
+      <tr><th>Where to use it</th><td>Open weights on Hugging Face (Apache 2.0), vLLM, Transformers</td></tr>
+      <tr><th>Avg character error rate</th><td>8.82% <small>(Mistral model card (vendor-reported))</small></td></tr><tr><th>Transcription delay</th><td>480 ms <small>(Mistral model card)</small></td></tr><tr><th>Parameters</th><td>4.4B <small>(Mistral model card)</small></td></tr><tr><th>Arabic test sets</th><td>7 <small>(Mistral model card)</small></td></tr>
+    </table>
+  </div>
+  
+  
+  <div class="points"><strong>3 things to know</strong>
+    <ol><li>Open weights under Apache 2.0, about 4.4B parameters</li><li>Vendor-reported 8.82% average character error rate on 7 Arabic tests</li><li>Handles dialects and speakers who switch languages mid-sentence</li></ol>
+  </div>
+  
+  <div class="media">
+    
+      <video controls playsinline preload="metadata" src="https://abahanad69.github.io/emaritesai/media/2026-10-10_02/reel_en.mp4"></video>
+      
+    
+      
+    
+      
+    
+      
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-10_02/slide_03_specs_en.jpg" alt="Mistral releases an open 4B model that transcribes Arabic live">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-10_02/slide_04_specs_ar.jpg" alt="Mistral releases an open 4B model that transcribes Arabic live">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-10_02/slide_05_points_en.jpg" alt="Mistral releases an open 4B model that transcribes Arabic live">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-10_02/slide_06_points_ar.jpg" alt="Mistral releases an open 4B model that transcribes Arabic live">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-10_02/slide_07_outro.jpg" alt="Mistral releases an open 4B model that transcribes Arabic live">
+    
+  </div>
+  
+  <div class="sources"><strong>Sources:</strong>
+    <a href="https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-Arabic" target="_blank" rel="noopener nofollow">Mistral AI model card (Hugging Face)</a>, <a href="https://www.ecofinagency.com/news-digital/0110-59399-morocco-and-mistral-ai-launch-open-source-tools-for-local-dialect-processing" target="_blank" rel="noopener nofollow">Ecofin Agency</a>
+  </div>
+  <div class="sources" style="margin-top:10px">
+    <div class="fact">⚠️ Open weights, Apache 2.0, about 4.4B parameters, Arabic dialects + MSA, code-switching</div><div class="fact">⚠️ 8.82% average CER on seven Arabic benchmarks at 480 ms; Voxtral Transcribe Arabic 7.91%</div><div class="fact">⚠️ Weights published on Hugging Face October 8</div><div class="fact">⚠️ Morocco&#39;s digital ministry announced Mistral-built Arabic tools on September 29</div>
+  </div>
+</article>
+
+<footer>EmaritesAI · AI &amp; tech, explained daily · @emaritesai</footer>
+</div>
+</body>
+</html>
