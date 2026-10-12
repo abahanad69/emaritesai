@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qwen releases Image-2.1-Turbo, a 7B image model that needs 8 steps — EmaritesAI</title>
+<meta name="description" content="Alibaba&#39;s Qwen team has published Qwen-Image-2.1-Turbo on Hugging Face, a 7B accelerated version of Qwen-Image-2.1 that generates and edits images in 8 denoising steps. It is released under the Qwen Research License.">
+<meta property="og:image" content="https://abahanad69.github.io/emaritesai/media/2026-10-12_06/slide_01_cover_en.jpg">
+<meta property="og:title" content="Qwen releases Image-2.1-Turbo, a 7B image model that needs 8 steps">
+<meta property="og:description" content="Alibaba&#39;s Qwen team has published Qwen-Image-2.1-Turbo on Hugging Face, a 7B accelerated version of Qwen-Image-2.1 that generates and edits images in 8 denoising steps. It is released under the Qwen Research License.">
+<link rel="alternate" type="application/rss+xml" title="EmaritesAI" href="https://abahanad69.github.io/emaritesai/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+Arabic:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B0F19;--bg2:#141B2D;--accent:#4F8CFF;--accent2:#9B5CFF;--text:#FFFFFF;--muted:#9AA4B8}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(160deg,var(--bg),var(--bg2));color:var(--text);font-family:Inter,"Noto Sans Arabic",system-ui,sans-serif;min-height:100vh}
+html[dir=rtl] body{font-family:"Noto Sans Arabic",Inter,system-ui,sans-serif}
+a{color:var(--accent);text-decoration:none}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px 60px}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:22px;color:var(--text)}
+.logo i{display:inline-block;width:34px;height:34px;border-radius:9px;background:var(--accent);color:#fff;font-style:normal;text-align:center;line-height:34px;font-weight:800}
+nav a{margin-inline-start:16px;color:var(--muted);font-weight:600}
+nav a.active{color:var(--text)}
+.tag{display:inline-block;background:var(--accent);color:#fff;border-radius:999px;padding:4px 12px;font-size:12px;font-weight:600}
+.card{display:block;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08);color:var(--text)}
+.card h2{margin:10px 0 6px;font-size:24px;line-height:1.25}
+.card p{margin:0;color:var(--muted)}
+.meta{color:var(--muted);font-size:13px;margin-top:8px}
+article h1{font-size:38px;line-height:1.15;margin:18px 0 8px}
+article .sub{font-size:20px;color:var(--muted);margin:0 0 20px}
+article p{font-size:18px;line-height:1.7}
+.points{background:rgba(255,255,255,.05);border-radius:16px;padding:18px 24px;margin:24px 0}
+.points li{margin:8px 0;font-size:17px}
+.spec{width:100%;border-collapse:collapse;margin:10px 0;font-size:16px}.spec th,.spec td{padding:7px 8px;border-bottom:1px solid rgba(255,255,255,.08);text-align:start}.spec th{color:#9AA4B8;font-weight:600;width:36%}.spec td:last-child{text-align:end;font-variant-numeric:tabular-nums}.points small{color:#9AA4B8}
+.media{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:24px 0}
+.media img,.media video{width:100%;border-radius:12px;display:block}
+.sources{font-size:14px;color:var(--muted)}
+.fact{font-size:14px;margin:4px 0}
+footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="https://abahanad69.github.io/emaritesai/en/"><i>E</i>EmaritesAI</a>
+  <nav>
+    <a href="https://abahanad69.github.io/emaritesai/en/qwen-image-2-1-turbo-release/" class="active">EN</a>
+    <a href="https://abahanad69.github.io/emaritesai/ar/qwen-image-2-1-turbo-release/" class="">العربية</a>
+    <a href="https://instagram.com/emaritesai" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+</header>
+
+<article>
+  <span class="tag">AI Models</span>
+  <h1>Qwen releases Image-2.1-Turbo, a 7B image model that needs 8 steps</h1>
+  <p class="sub">The faster checkpoint creates and edits images, including transparent ones, and runs in Diffusers and Mac apps.</p>
+  <div class="meta">2026-10-12 · EmaritesAI</div>
+  <p>Alibaba&#39;s Qwen team has added a faster image model to Hugging Face. Qwen-Image-2.1-Turbo, listed on October 9, is an accelerated checkpoint of Qwen-Image-2.1 and uses the same 7 billion parameter architecture for generating and editing pictures.</p><p>The main change is speed. Diffusion image models build a picture by removing noise over a series of steps, and many need dozens. According to the model card, Turbo uses a fixed 8-step schedule that loads automatically, with guidance set to 1 by default. It also reuses cached text and reference-image context between steps to cut repeated work. Qwen does not give timing figures or benchmark scores on the page.</p><p>The card shows text-to-image and editing across portraits, posters with typography, interface layouts and multi-image compositions. It can also produce transparent RGBA images, useful for logos and stickers. Aspect ratio presets run from 1536 by 2752 pixels for 9:16 to 2752 by 1536 for 16:9.</p><p>The weights are under the Qwen Research License rather than a standard open-source license, so anyone planning commercial use should read its terms first. The model runs through Hugging Face&#39;s Diffusers library and is listed for Google Colab, Kaggle and the Mac apps Draw Things and DiffusionBee. No hosted inference provider offered it at the time of writing.</p>
+  
+  
+  <div class="points"><strong>Spec sheet</strong>
+    <table class="spec">
+      <tr><th>Model</th><td>Qwen-Image-2.1-Turbo · Alibaba Qwen</td></tr>
+      <tr><th>Type</th><td>Text-to-image and image editing</td></tr>
+      <tr><th>Released</th><td>2026-10-09</td></tr>
+      
+      
+      <tr><th>Where to use it</th><td>Weights on Hugging Face and ModelScope (Qwen Research License); Diffusers</td></tr>
+      <tr><th>Parameters</th><td>7B <small>(Hugging Face model card)</small></td></tr><tr><th>Default denoising steps</th><td>8 <small>(Hugging Face model card)</small></td></tr><tr><th>16:9 preset size</th><td>2752x1536 <small>(Hugging Face model card)</small></td></tr><tr><th>Transparent output</th><td>RGBA <small>(Hugging Face model card)</small></td></tr>
+    </table>
+  </div>
+  
+  
+  <div class="points"><strong>3 things to know</strong>
+    <ol><li>Qwen-Image-2.1-Turbo is a 7B model that creates images in 8 steps</li><li>It can edit photos and make transparent RGBA images</li><li>Weights use the Qwen Research License; runs in Diffusers and Draw Things</li></ol>
+  </div>
+  
+  <div class="media">
+    
+      
+    
+      
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-12_06/slide_03_specs_en.jpg" alt="Qwen releases Image-2.1-Turbo, a 7B image model that needs 8 steps">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-12_06/slide_04_specs_ar.jpg" alt="Qwen releases Image-2.1-Turbo, a 7B image model that needs 8 steps">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-12_06/slide_05_numbers_en.jpg" alt="Qwen releases Image-2.1-Turbo, a 7B image model that needs 8 steps">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-12_06/slide_06_numbers_ar.jpg" alt="Qwen releases Image-2.1-Turbo, a 7B image model that needs 8 steps">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-12_06/slide_07_outro.jpg" alt="Qwen releases Image-2.1-Turbo, a 7B image model that needs 8 steps">
+    
+  </div>
+  
+  <div class="sources"><strong>Sources:</strong>
+    <a href="https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo" target="_blank" rel="noopener nofollow">Hugging Face: Qwen/Qwen-Image-2.1-Turbo</a>, <a href="https://huggingface.co/Qwen" target="_blank" rel="noopener nofollow">Hugging Face new-model feed</a>
+  </div>
+  <div class="sources" style="margin-top:10px">
+    <div class="fact">⚠️ Qwen-Image-2.1-Turbo published Oct 9</div><div class="fact">⚠️ 7B params, same architecture as Qwen-Image-2.1; 8-step schedule; CFG 1</div><div class="fact">⚠️ Text-to-image, editing, RGBA output; presets 1536x2752 to 2752x1536</div><div class="fact">⚠️ Qwen Research License; Diffusers, Colab, Kaggle, Draw Things, DiffusionBee; no inference provider</div>
+  </div>
+</article>
+
+<footer>EmaritesAI · AI &amp; tech, explained daily · @emaritesai</footer>
+</div>
+</body>
+</html>
