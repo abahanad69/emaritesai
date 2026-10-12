@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cloudflare تطلق Clef-omni المفتوح لتقييم الصوت والفيديو — EmaritesAI</title>
+<meta name="description" content="أطلقت Cloudflare نموذج Clef-omni مفتوح الأوزان، وهو يقرأ النصوص والصور والصوت والفيديو ويعيد درجات لمجموعة محددة من الخيارات. سعره 0.15 دولار لكل مليون رمز إدخال على Workers AI، وأوزانه متاحة على Hugging Face.">
+<meta property="og:image" content="https://abahanad69.github.io/emaritesai/media/2026-10-12_02/slide_01_cover_en.jpg">
+<meta property="og:title" content="Cloudflare تطلق Clef-omni المفتوح لتقييم الصوت والفيديو">
+<meta property="og:description" content="أطلقت Cloudflare نموذج Clef-omni مفتوح الأوزان، وهو يقرأ النصوص والصور والصوت والفيديو ويعيد درجات لمجموعة محددة من الخيارات. سعره 0.15 دولار لكل مليون رمز إدخال على Workers AI، وأوزانه متاحة على Hugging Face.">
+<link rel="alternate" type="application/rss+xml" title="EmaritesAI" href="https://abahanad69.github.io/emaritesai/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+Arabic:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B0F19;--bg2:#141B2D;--accent:#4F8CFF;--accent2:#9B5CFF;--text:#FFFFFF;--muted:#9AA4B8}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(160deg,var(--bg),var(--bg2));color:var(--text);font-family:Inter,"Noto Sans Arabic",system-ui,sans-serif;min-height:100vh}
+html[dir=rtl] body{font-family:"Noto Sans Arabic",Inter,system-ui,sans-serif}
+a{color:var(--accent);text-decoration:none}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px 60px}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:22px;color:var(--text)}
+.logo i{display:inline-block;width:34px;height:34px;border-radius:9px;background:var(--accent);color:#fff;font-style:normal;text-align:center;line-height:34px;font-weight:800}
+nav a{margin-inline-start:16px;color:var(--muted);font-weight:600}
+nav a.active{color:var(--text)}
+.tag{display:inline-block;background:var(--accent);color:#fff;border-radius:999px;padding:4px 12px;font-size:12px;font-weight:600}
+.card{display:block;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08);color:var(--text)}
+.card h2{margin:10px 0 6px;font-size:24px;line-height:1.25}
+.card p{margin:0;color:var(--muted)}
+.meta{color:var(--muted);font-size:13px;margin-top:8px}
+article h1{font-size:38px;line-height:1.15;margin:18px 0 8px}
+article .sub{font-size:20px;color:var(--muted);margin:0 0 20px}
+article p{font-size:18px;line-height:1.7}
+.points{background:rgba(255,255,255,.05);border-radius:16px;padding:18px 24px;margin:24px 0}
+.points li{margin:8px 0;font-size:17px}
+.spec{width:100%;border-collapse:collapse;margin:10px 0;font-size:16px}.spec th,.spec td{padding:7px 8px;border-bottom:1px solid rgba(255,255,255,.08);text-align:start}.spec th{color:#9AA4B8;font-weight:600;width:36%}.spec td:last-child{text-align:end;font-variant-numeric:tabular-nums}.points small{color:#9AA4B8}
+.media{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:24px 0}
+.media img,.media video{width:100%;border-radius:12px;display:block}
+.sources{font-size:14px;color:var(--muted)}
+.fact{font-size:14px;margin:4px 0}
+footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="https://abahanad69.github.io/emaritesai/ar/"><i>E</i>EmaritesAI</a>
+  <nav>
+    <a href="https://abahanad69.github.io/emaritesai/en/cloudflare-clef-omni-release/" class="">EN</a>
+    <a href="https://abahanad69.github.io/emaritesai/ar/cloudflare-clef-omni-release/" class="active">العربية</a>
+    <a href="https://instagram.com/emaritesai" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+</header>
+
+<article>
+  <span class="tag">نماذج الذكاء الاصطناعي</span>
+  <h1>Cloudflare تطلق Clef-omni المفتوح لتقييم الصوت والفيديو</h1>
+  <p class="sub">النموذج الجديد يختار بين خيارات محددة انطلاقا من نص أو صورة أو صوت أو فيديو، وخفضت Cloudflare سعر Clef-flash إلى 0.038 دولار.</p>
+  <div class="meta">2026-10-12 · EmaritesAI</div>
+  <p>أضافت Cloudflare في 9 أكتوبر نموذجا ثالثا إلى عائلة Clef. يقبل Clef-omni الصوت بصيغتي WAV وMP3، والفيديو بصيغتي MP4 وWebM، إضافة إلى الصور والنصوص، وبدلا من كتابة إجابة يعيد درجات مقيدة بمخطط محدد لمجموعة ثابتة من الخيارات. وهذا يجعله مناسبا لمهام مثل الإشراف على المحتوى وتوجيه الطلبات والتصنيف، حين يحتاج النظام إلى قرار سريع لا إلى نص.</p><p>وبحسب Cloudflare، بني Clef-omni على نموذج Qwen3-Omni-30B-A3B-Instruct من علي بابا، وهو نموذج يعتمد مزيج الخبراء، بعد حذف أجزاء توليد الكلام. الأوزان متاحة على Hugging Face، والنموذج يعمل على Workers AI بسعر إطلاق 0.15 دولار لكل مليون رمز إدخال. وتقول الشركة إن زمن الاستجابة الوسيط نحو 130 مللي ثانية للنص و150 للصور، وإن معالجة فيديو مدته 21 ثانية مع الصوت استغرقت نحو 1.5 ثانية.</p><p>ونشرت الشركة نتائجها: 94.8 في مقياس macro-F1 على اختبار BANKING77، و97.7 على CLINC150 مع الأسئلة الخارجة عن النطاق. وهذه أرقام صادرة عن الشركة ولم تختبر بشكل مستقل.</p><p>كما غير التحديث النموذجين اللذين صدرا قبل أسبوع. أصبح سعر Clef-flash 0.038 دولار لكل مليون رمز إدخال بدلا من 0.09، لكن نافذة السياق في النسخة المستضافة انخفضت من 64 ألفا إلى 24 ألف رمز، وتقول Cloudflare إن 0.24% فقط من الطلبات تجاوزت هذا الحد. أما Clef فبقي سعره 0.24 دولار، وأصبح أسرع بما بين 1.7 و2 مرة في زمن الاستجابة الوسيط.</p>
+  
+  
+  <div class="points"><strong>المواصفات</strong>
+    <table class="spec">
+      <tr><th>النموذج</th><td>Clef-omni · Cloudflare</td></tr>
+      <tr><th>النوع</th><td>نموذج متعدد الوسائط لتقييم القرارات</td></tr>
+      <tr><th>الإطلاق</th><td>2026-10-09</td></tr>
+      
+      <tr><th>السعر</th><td>$0.15 per 1M input tokens</td></tr>
+      <tr><th>أين تستخدمه</th><td>أوزان مفتوحة على Hugging Face وعبر Workers AI</td></tr>
+      <tr><th>Median text latency</th><td>~130 ms <small>(Cloudflare blog)</small></td></tr><tr><th>21 s video with sound</th><td>~1.5 s <small>(Cloudflare blog)</small></td></tr><tr><th>BANKING77 macro-F1</th><td>94.8 <small>(Cloudflare blog (vendor-reported))</small></td></tr><tr><th>CLINC150+OOS macro-F1</th><td>97.7 <small>(Cloudflare blog (vendor-reported))</small></td></tr>
+    </table>
+  </div>
+  
+  
+  <div class="points"><strong>3 نقاط أساسية</strong>
+    <ol><li>Clef-omni يقيم الخيارات من النص والصورة والصوت والفيديو</li><li>سعر الإطلاق 0.15 دولار لكل مليون رمز والأوزان على Hugging Face</li><li>سعر Clef-flash ينخفض إلى 0.038 دولار مع سياق مستضاف 24 ألفا</li></ol>
+  </div>
+  
+  <div class="media">
+    
+      
+    
+      
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-12_02/slide_03_specs_en.jpg" alt="Cloudflare تطلق Clef-omni المفتوح لتقييم الصوت والفيديو">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-12_02/slide_04_specs_ar.jpg" alt="Cloudflare تطلق Clef-omni المفتوح لتقييم الصوت والفيديو">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-12_02/slide_05_numbers_en.jpg" alt="Cloudflare تطلق Clef-omni المفتوح لتقييم الصوت والفيديو">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-12_02/slide_06_numbers_ar.jpg" alt="Cloudflare تطلق Clef-omni المفتوح لتقييم الصوت والفيديو">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-12_02/slide_07_outro.jpg" alt="Cloudflare تطلق Clef-omni المفتوح لتقييم الصوت والفيديو">
+    
+  </div>
+  
+  <div class="sources"><strong>المصادر:</strong>
+    <a href="https://blog.cloudflare.com/clef-faster-cheaper-multimodal/" target="_blank" rel="noopener nofollow">Cloudflare blog</a>, <a href="https://huggingface.co/Cloudflare/clef-omni" target="_blank" rel="noopener nofollow">Hugging Face: Cloudflare/clef-omni</a>, <a href="https://www.nocode.mba/ai-release-tracker/2026/10" target="_blank" rel="noopener nofollow">AI release tracker (nocode.mba)</a>
+  </div>
+  <div class="sources" style="margin-top:10px">
+    <div class="fact">✅ Clef-omni released Oct 9, accepts audio, video, images, text</div><div class="fact">⚠️ Built on Qwen3-Omni-30B-A3B-Instruct with TTS parts removed</div><div class="fact">⚠️ $0.15 per 1M input tokens; Clef-flash $0.038 (from $0.09); Clef $0.24</div><div class="fact">⚠️ Latency ~130 ms text, ~150 ms images, ~1.5 s for 21 s video</div><div class="fact">⚠️ BANKING77 94.8, CLINC150+OOS 97.7 macro-F1</div><div class="fact">⚠️ Clef-flash hosted context cut from 64k to 24k; 0.24% of requests exceeded 24k</div>
+  </div>
+</article>
+
+<footer>EmaritesAI · الذكاء الاصطناعي والتقنية، يومياً · @emaritesai</footer>
+</div>
+</body>
+</html>
