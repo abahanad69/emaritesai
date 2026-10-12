@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What is multimodal AI, and how does one model see and hear? — EmaritesAI</title>
+<meta name="description" content="A multimodal model handles more than one kind of input, such as text, pictures, sound and video, inside one system. It turns each kind into the same internal format so it can reason across them together.">
+<meta property="og:image" content="https://abahanad69.github.io/emaritesai/media/2026-10-12_04/slide_01_cover_en.jpg">
+<meta property="og:title" content="What is multimodal AI, and how does one model see and hear?">
+<meta property="og:description" content="A multimodal model handles more than one kind of input, such as text, pictures, sound and video, inside one system. It turns each kind into the same internal format so it can reason across them together.">
+<link rel="alternate" type="application/rss+xml" title="EmaritesAI" href="https://abahanad69.github.io/emaritesai/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+Arabic:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B0F19;--bg2:#141B2D;--accent:#4F8CFF;--accent2:#9B5CFF;--text:#FFFFFF;--muted:#9AA4B8}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(160deg,var(--bg),var(--bg2));color:var(--text);font-family:Inter,"Noto Sans Arabic",system-ui,sans-serif;min-height:100vh}
+html[dir=rtl] body{font-family:"Noto Sans Arabic",Inter,system-ui,sans-serif}
+a{color:var(--accent);text-decoration:none}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px 60px}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:22px;color:var(--text)}
+.logo i{display:inline-block;width:34px;height:34px;border-radius:9px;background:var(--accent);color:#fff;font-style:normal;text-align:center;line-height:34px;font-weight:800}
+nav a{margin-inline-start:16px;color:var(--muted);font-weight:600}
+nav a.active{color:var(--text)}
+.tag{display:inline-block;background:var(--accent);color:#fff;border-radius:999px;padding:4px 12px;font-size:12px;font-weight:600}
+.card{display:block;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08);color:var(--text)}
+.card h2{margin:10px 0 6px;font-size:24px;line-height:1.25}
+.card p{margin:0;color:var(--muted)}
+.meta{color:var(--muted);font-size:13px;margin-top:8px}
+article h1{font-size:38px;line-height:1.15;margin:18px 0 8px}
+article .sub{font-size:20px;color:var(--muted);margin:0 0 20px}
+article p{font-size:18px;line-height:1.7}
+.points{background:rgba(255,255,255,.05);border-radius:16px;padding:18px 24px;margin:24px 0}
+.points li{margin:8px 0;font-size:17px}
+.spec{width:100%;border-collapse:collapse;margin:10px 0;font-size:16px}.spec th,.spec td{padding:7px 8px;border-bottom:1px solid rgba(255,255,255,.08);text-align:start}.spec th{color:#9AA4B8;font-weight:600;width:36%}.spec td:last-child{text-align:end;font-variant-numeric:tabular-nums}.points small{color:#9AA4B8}
+.media{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:24px 0}
+.media img,.media video{width:100%;border-radius:12px;display:block}
+.sources{font-size:14px;color:var(--muted)}
+.fact{font-size:14px;margin:4px 0}
+footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="https://abahanad69.github.io/emaritesai/en/"><i>E</i>EmaritesAI</a>
+  <nav>
+    <a href="https://abahanad69.github.io/emaritesai/en/multimodal-ai-explained/" class="active">EN</a>
+    <a href="https://abahanad69.github.io/emaritesai/ar/multimodal-ai-explained/" class="">العربية</a>
+    <a href="https://instagram.com/emaritesai" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+</header>
+
+<article>
+  <span class="tag">AI Explained</span>
+  <h1>What is multimodal AI, and how does one model see and hear?</h1>
+  <p class="sub">Models like Qwen3-Omni and Cloudflare&#39;s new Clef-omni take text, images, audio and video in a single system.</p>
+  <div class="meta">2026-10-12 · EmaritesAI</div>
+  <p>Early chatbots read and wrote text only. A multimodal model accepts several kinds of input, often text, images, audio and video, and works on them in one system instead of passing each to a separate tool.</p><p>The usual approach is to give each input type its own encoder. An image encoder cuts a picture into small patches, an audio encoder slices sound into short frames, and each piece becomes a list of numbers in the same space the model uses for words. From then on, the model treats a patch of a photo much like a token of text, so it can answer a spoken question about a video clip.</p><p>Alibaba&#39;s Qwen3-Omni is one example. Its model card describes a Thinker that handles understanding and text, and a Talker that produces speech, and lists support for text in 119 languages and speech input in 19, including Arabic. Cloudflare built its new Clef-omni on that model, removed the speech output and trained it to return scores for options instead of sentences.</p><p>The benefit is context: a model that hears the audio and sees the frames of a video can judge it better than one that only reads a transcript. The cost is compute, because images and video turn into many tokens.</p>
+  
+  <div class="points"><strong>Explained simply</strong>
+    <ol><li>Separate encoders: Each input type, such as images or audio, gets its own encoder that turns it into numbers.</li><li>Shared space: Those numbers sit in the same space as word tokens, so the model can mix them.</li><li>One reasoning step: The model answers using all inputs at once, like a spoken question about a video.</li><li>Output choices: Some models reply in text or speech; others, like Clef-omni, return scores for options.</li></ol>
+  </div>
+  
+  
+  
+  <div class="points"><strong>3 things to know</strong>
+    <ol><li>Multimodal models take text, images, audio and video in one system</li><li>Encoders turn each input into numbers the model treats like words</li><li>More context from video and sound costs more compute</li></ol>
+  </div>
+  
+  <div class="media">
+    
+      
+    
+      
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-12_04/slide_03_steps_en.jpg" alt="What is multimodal AI, and how does one model see and hear?">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-12_04/slide_04_steps_ar.jpg" alt="What is multimodal AI, and how does one model see and hear?">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-12_04/slide_05_outro.jpg" alt="What is multimodal AI, and how does one model see and hear?">
+    
+  </div>
+  
+  <div class="sources"><strong>Sources:</strong>
+    <a href="https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Instruct" target="_blank" rel="noopener nofollow">Qwen3-Omni-30B-A3B-Instruct model card</a>, <a href="https://blog.cloudflare.com/clef-faster-cheaper-multimodal/" target="_blank" rel="noopener nofollow">Cloudflare blog: Clef-omni</a>
+  </div>
+  <div class="sources" style="margin-top:10px">
+    <div class="fact">⚠️ Qwen3-Omni uses a Thinker-Talker design; text in 119 languages, speech input in 19 incl. Arabic</div><div class="fact">⚠️ Clef-omni is built on Qwen3-Omni with speech output removed and returns option scores</div>
+  </div>
+</article>
+
+<footer>EmaritesAI · AI &amp; tech, explained daily · @emaritesai</footer>
+</div>
+</body>
+</html>
