@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI agents rebuild classic games&#39; code, putting Halo in a browser tab — EmaritesAI</title>
+<meta name="description" content="Kotaku reports a wave of AI-decompiled browser ports of games including Halo: Combat Evolved and GTA: Vice City, linked to Claude Opus 5.5. A developer who ran agents for three months says 83% of his rebuilt functions now match the original byte for byte.">
+<meta property="og:image" content="https://abahanad69.github.io/emaritesai/media/2026-10-12_05/slide_01_cover_en.jpg">
+<meta property="og:title" content="AI agents rebuild classic games&#39; code, putting Halo in a browser tab">
+<meta property="og:description" content="Kotaku reports a wave of AI-decompiled browser ports of games including Halo: Combat Evolved and GTA: Vice City, linked to Claude Opus 5.5. A developer who ran agents for three months says 83% of his rebuilt functions now match the original byte for byte.">
+<link rel="alternate" type="application/rss+xml" title="EmaritesAI" href="https://abahanad69.github.io/emaritesai/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+Arabic:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B0F19;--bg2:#141B2D;--accent:#4F8CFF;--accent2:#9B5CFF;--text:#FFFFFF;--muted:#9AA4B8}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(160deg,var(--bg),var(--bg2));color:var(--text);font-family:Inter,"Noto Sans Arabic",system-ui,sans-serif;min-height:100vh}
+html[dir=rtl] body{font-family:"Noto Sans Arabic",Inter,system-ui,sans-serif}
+a{color:var(--accent);text-decoration:none}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px 60px}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:22px;color:var(--text)}
+.logo i{display:inline-block;width:34px;height:34px;border-radius:9px;background:var(--accent);color:#fff;font-style:normal;text-align:center;line-height:34px;font-weight:800}
+nav a{margin-inline-start:16px;color:var(--muted);font-weight:600}
+nav a.active{color:var(--text)}
+.tag{display:inline-block;background:var(--accent);color:#fff;border-radius:999px;padding:4px 12px;font-size:12px;font-weight:600}
+.card{display:block;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08);color:var(--text)}
+.card h2{margin:10px 0 6px;font-size:24px;line-height:1.25}
+.card p{margin:0;color:var(--muted)}
+.meta{color:var(--muted);font-size:13px;margin-top:8px}
+article h1{font-size:38px;line-height:1.15;margin:18px 0 8px}
+article .sub{font-size:20px;color:var(--muted);margin:0 0 20px}
+article p{font-size:18px;line-height:1.7}
+.points{background:rgba(255,255,255,.05);border-radius:16px;padding:18px 24px;margin:24px 0}
+.points li{margin:8px 0;font-size:17px}
+.spec{width:100%;border-collapse:collapse;margin:10px 0;font-size:16px}.spec th,.spec td{padding:7px 8px;border-bottom:1px solid rgba(255,255,255,.08);text-align:start}.spec th{color:#9AA4B8;font-weight:600;width:36%}.spec td:last-child{text-align:end;font-variant-numeric:tabular-nums}.points small{color:#9AA4B8}
+.media{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:24px 0}
+.media img,.media video{width:100%;border-radius:12px;display:block}
+.sources{font-size:14px;color:var(--muted)}
+.fact{font-size:14px;margin:4px 0}
+footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="https://abahanad69.github.io/emaritesai/en/"><i>E</i>EmaritesAI</a>
+  <nav>
+    <a href="https://abahanad69.github.io/emaritesai/en/ai-agents-decompile-classic-games/" class="active">EN</a>
+    <a href="https://abahanad69.github.io/emaritesai/ar/ai-agents-decompile-classic-games/" class="">العربية</a>
+    <a href="https://instagram.com/emaritesai" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+</header>
+
+<article>
+  <span class="tag">Tools &amp; Apps</span>
+  <h1>AI agents rebuild classic games&#39; code, putting Halo in a browser tab</h1>
+  <p class="sub">Browser ports of Halo: CE and GTA: Vice City spread as one developer reports 83% byte-exact code after 600B+ tokens.</p>
+  <div class="meta">2026-10-12 · EmaritesAI</div>
+  <p>AI coding agents are turning compiled games back into readable source code, and the results are spreading fast. Kotaku reported on October 9 that browser versions of Halo: Combat Evolved, Grand Theft Auto: Vice City, Skate 3, Call of Duty: Black Ops and The Simpsons: Hit and Run have appeared online, many traced to a post on October 8. The writer said several ran close to flawlessly and linked the wave to Claude Opus 5.5, which he described as very good at decompiling.</p><p>A detailed account from reverse engineer Maurice Heumann shows how this works. In a post the same day, he described using Claude Code and Codex agents over about three months to rebuild an unnamed first-person shooter in C++. At its peak the setup ran 16 agents, with Opus 5.5 among the models. He estimates the job used 600 to 700 billion tokens.</p><p>The first month produced a game that launched and loaded maps, but much of the code was wrong underneath. Progress came after he added a strict check that compares each rebuilt function with the original binary. He reports 99% of functions present and 83% byte-exact, and says he will not share the code.</p><p>The ports raise copyright questions that publishers have yet to answer in public. Kotaku&#39;s writer compared the situation to the early days of pirated DVDs.</p>
+  
+  
+  
+  <div class="points"><strong>3 things to know</strong>
+    <ol><li>Kotaku found browser ports of Halo: CE, GTA: Vice City and Skate 3</li><li>One developer ran up to 16 agents for 3 months, about 600-700B tokens</li><li>He reports 83% of rebuilt functions match the original byte for byte</li></ol>
+  </div>
+  
+  <div class="media">
+    
+      <video controls playsinline preload="metadata" src="https://abahanad69.github.io/emaritesai/media/2026-10-12_05/reel_en.mp4"></video>
+      
+    
+      
+    
+      
+    
+      
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-12_05/slide_03_numbers_en.jpg" alt="AI agents rebuild classic games&#39; code, putting Halo in a browser tab">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-12_05/slide_04_numbers_ar.jpg" alt="AI agents rebuild classic games&#39; code, putting Halo in a browser tab">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-12_05/slide_05_outro.jpg" alt="AI agents rebuild classic games&#39; code, putting Halo in a browser tab">
+    
+  </div>
+  
+  <div class="sources"><strong>Sources:</strong>
+    <a href="https://kotaku.com/we-might-be-cooked-as-these-vibe-coded-web-browser-ports-of-halo-the-simpsons-hit-and-run-and-gta-vice-city-seem-to-work-perfectly-2000743300" target="_blank" rel="noopener nofollow">Kotaku</a>, <a href="https://momo5502.com/posts/2026-10-09-game-decompilation/" target="_blank" rel="noopener nofollow">Maurice Heumann&#39;s blog (primary)</a>, <a href="https://www.techmeme.com/" target="_blank" rel="noopener nofollow">Techmeme</a>, <a href="https://news.ycombinator.com/item?id=50039092" target="_blank" rel="noopener nofollow">Hacker News discussion</a>
+  </div>
+  <div class="sources" style="margin-top:10px">
+    <div class="fact">✅ Browser ports of Halo: CE, GTA: Vice City, Skate 3, Black Ops, Simpsons Hit and Run appeared</div><div class="fact">⚠️ Ports linked to Claude Opus 5.5</div><div class="fact">⚠️ Heumann: ~3 months, up to 16 agents, Opus 5.5 among models, 600-700B tokens estimate</div><div class="fact">⚠️ 99% of functions present, 83% byte-exact; code not shared</div><div class="fact">❗ Activision issued DMCA takedowns</div>
+  </div>
+</article>
+
+<footer>EmaritesAI · AI &amp; tech, explained daily · @emaritesai</footer>
+</div>
+</body>
+</html>
