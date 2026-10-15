@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Liquid AI تطلق نموذجا مفتوحا للوكلاء يعمل على الحاسوب — EmaritesAI</title>
+<meta name="description" content="نشرت Liquid AI نموذج LFM2.5-24B-A2B على Hugging Face، وهو نموذج مفتوح الأوزان من نوع خليط الخبراء مصمم للوكلاء الذين يستخدمون الأدوات على الأجهزة المحلية. تبلغ نافذة سياقه 131 ألف رمز، ويتصدر عدة اختبارات لاستخدام الأدوات وفق اختبارات الشركة.">
+<meta property="og:image" content="https://abahanad69.github.io/emaritesai/media/2026-10-14_05/slide_01_cover_en.jpg">
+<meta property="og:title" content="Liquid AI تطلق نموذجا مفتوحا للوكلاء يعمل على الحاسوب">
+<meta property="og:description" content="نشرت Liquid AI نموذج LFM2.5-24B-A2B على Hugging Face، وهو نموذج مفتوح الأوزان من نوع خليط الخبراء مصمم للوكلاء الذين يستخدمون الأدوات على الأجهزة المحلية. تبلغ نافذة سياقه 131 ألف رمز، ويتصدر عدة اختبارات لاستخدام الأدوات وفق اختبارات الشركة.">
+<link rel="alternate" type="application/rss+xml" title="EmaritesAI" href="https://abahanad69.github.io/emaritesai/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+Arabic:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B0F19;--bg2:#141B2D;--accent:#4F8CFF;--accent2:#9B5CFF;--text:#FFFFFF;--muted:#9AA4B8}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(160deg,var(--bg),var(--bg2));color:var(--text);font-family:Inter,"Noto Sans Arabic",system-ui,sans-serif;min-height:100vh}
+html[dir=rtl] body{font-family:"Noto Sans Arabic",Inter,system-ui,sans-serif}
+a{color:var(--accent);text-decoration:none}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px 60px}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:22px;color:var(--text)}
+.logo i{display:inline-block;width:34px;height:34px;border-radius:9px;background:var(--accent);color:#fff;font-style:normal;text-align:center;line-height:34px;font-weight:800}
+nav a{margin-inline-start:16px;color:var(--muted);font-weight:600}
+nav a.active{color:var(--text)}
+.tag{display:inline-block;background:var(--accent);color:#fff;border-radius:999px;padding:4px 12px;font-size:12px;font-weight:600}
+.card{display:block;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08);color:var(--text)}
+.card h2{margin:10px 0 6px;font-size:24px;line-height:1.25}
+.card p{margin:0;color:var(--muted)}
+.meta{color:var(--muted);font-size:13px;margin-top:8px}
+article h1{font-size:38px;line-height:1.15;margin:18px 0 8px}
+article .sub{font-size:20px;color:var(--muted);margin:0 0 20px}
+article p{font-size:18px;line-height:1.7}
+.points{background:rgba(255,255,255,.05);border-radius:16px;padding:18px 24px;margin:24px 0}
+.points li{margin:8px 0;font-size:17px}
+.spec{width:100%;border-collapse:collapse;margin:10px 0;font-size:16px}.spec th,.spec td{padding:7px 8px;border-bottom:1px solid rgba(255,255,255,.08);text-align:start}.spec th{color:#9AA4B8;font-weight:600;width:36%}.spec td:last-child{text-align:end;font-variant-numeric:tabular-nums}.points small{color:#9AA4B8}
+.media{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:24px 0}
+.media img,.media video{width:100%;border-radius:12px;display:block}
+.sources{font-size:14px;color:var(--muted)}
+.fact{font-size:14px;margin:4px 0}
+footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="https://abahanad69.github.io/emaritesai/ar/"><i>E</i>EmaritesAI</a>
+  <nav>
+    <a href="https://abahanad69.github.io/emaritesai/en/liquid-ai-lfm2-5-24b-a2b-open-model/" class="">EN</a>
+    <a href="https://abahanad69.github.io/emaritesai/ar/liquid-ai-lfm2-5-24b-a2b-open-model/" class="active">العربية</a>
+    <a href="https://instagram.com/emaritesai" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+</header>
+
+<article>
+  <span class="tag">نماذج الذكاء الاصطناعي</span>
+  <h1>Liquid AI تطلق نموذجا مفتوحا للوكلاء يعمل على الحاسوب</h1>
+  <p class="sub">يضم النموذج 24 مليار معامل لكنه يستخدم 2.45 مليار فقط لكل رمز، ويدعم العربية ضمن 16 لغة، ويولد 184 رمزا في الثانية على شريحة M5 Max.</p>
+  <div class="meta">2026-10-14 · EmaritesAI</div>
+  <p>أطلقت Liquid AI نموذج LFM2.5-24B-A2B في 13 أكتوبر بأوزان مفتوحة على Hugging Face وفق رخصة LFM 1.0. يضم النموذج 24 مليار معامل إجمالا، لكن تصميمه القائم على خليط الخبراء لا يفعّل سوى نحو 2.45 مليار معامل لكل رمز، ما يبقيه سريعا على الحواسيب المحمولة والمكتبية.</p><p>تقول الشركة إن النموذج صمم للوكلاء، فهو يفكر دائما قبل الإجابة ودُرب داخل أدوات وكلاء مثل OpenClaw وOpenCode. وفي اختبارات الشركة سجل 48.09 في اختبار LiveClaw للوكلاء مقابل 38.19 لنموذج Qwen3.6-35B-A3B الأكبر حجما، وتصدر اختبارات اتباع التعليمات الثلاثة. لكن Liquid تذكر أيضا نتائج أضعف تتفوق فيها النماذج الأكبر، إذ سجل 74.42 في GPQA Diamond مقابل 83.69 لـQwen، و51 في SWE-Bench Verified مقابل 66.2.</p><p>اتسعت نافذة السياق إلى 131,072 رمزا بعد أن كانت 32 ألفا في الإصدار السابق، وتضاعفت المفردات إلى 128 ألف رمز لتحسين التعامل مع الكتابات غير اللاتينية، والعربية من بين 16 لغة مدعومة. واستخدم التدريب المسبق نحو 33 تريليون رمز.</p><p>وبحسب Liquid، يولد النموذج 184 رمزا في الثانية على شريحة M5 Max من آبل، و114 رمزا على Ryzen AI Max+ 395 من AMD. ويعمل منذ اليوم الأول مع llama.cpp وMLX وvLLM وSGLang وONNX، مع نسخ GGUF وMLX بدقة 4 بت. كما تعرضه منصة OpenRouter بسعر 0.05 دولار لكل مليون رمز إدخال و0.70 دولار لكل مليون رمز إخراج. جميع نتائج الاختبارات صادرة عن الشركة.</p>
+  
+  
+  <div class="points"><strong>المواصفات</strong>
+    <table class="spec">
+      <tr><th>النموذج</th><td>LFM2.5-24B-A2B · Liquid AI</td></tr>
+      <tr><th>النوع</th><td>نموذج استدلال للوكلاء بخليط الخبراء</td></tr>
+      <tr><th>الإطلاق</th><td>2026-10-13</td></tr>
+      <tr><th>نافذة السياق</th><td>131K tokens</td></tr>
+      
+      <tr><th>أين تستخدمه</th><td>أوزان مفتوحة على Hugging Face برخصة LFM 1.0</td></tr>
+      <tr><th>Active parameters</th><td>2.45B of 24B <small>(Liquid AI model card)</small></td></tr><tr><th>Speed on M5 Max</th><td>184 tok/s <small>(Liquid AI (vendor-reported))</small></td></tr><tr><th>LiveClaw agent score</th><td>48.09 <small>(Liquid AI (vendor-reported))</small></td></tr><tr><th>Languages</th><td>16 incl. Arabic <small>(Liquid AI model card)</small></td></tr>
+    </table>
+  </div>
+  
+  
+  <div class="points"><strong>3 نقاط أساسية</strong>
+    <ol><li>24 مليار معامل لكن نحو 2.45 مليار فقط تعمل لكل رمز</li><li>نافذة سياق 131 ألف رمز والعربية ضمن 16 لغة مدعومة</li><li>تقول Liquid إنه يولد 184 رمزا في الثانية على M5 Max</li></ol>
+  </div>
+  
+  <div class="media">
+    
+      
+    
+      
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-14_05/slide_03_specs_en.jpg" alt="Liquid AI تطلق نموذجا مفتوحا للوكلاء يعمل على الحاسوب">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-14_05/slide_04_specs_ar.jpg" alt="Liquid AI تطلق نموذجا مفتوحا للوكلاء يعمل على الحاسوب">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-14_05/slide_05_numbers_en.jpg" alt="Liquid AI تطلق نموذجا مفتوحا للوكلاء يعمل على الحاسوب">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-14_05/slide_06_numbers_ar.jpg" alt="Liquid AI تطلق نموذجا مفتوحا للوكلاء يعمل على الحاسوب">
+    
+      <img loading="lazy" src="https://abahanad69.github.io/emaritesai/media/2026-10-14_05/slide_07_outro.jpg" alt="Liquid AI تطلق نموذجا مفتوحا للوكلاء يعمل على الحاسوب">
+    
+  </div>
+  
+  <div class="sources"><strong>المصادر:</strong>
+    <a href="https://huggingface.co/LiquidAI/LFM2.5-24B-A2B" target="_blank" rel="noopener nofollow">Hugging Face model card: LiquidAI/LFM2.5-24B-A2B</a>, <a href="https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b" target="_blank" rel="noopener nofollow">Hugging Face blog: Run fast, private agents on-device with LFM2.5-24B-A2B</a>, <a href="https://openrouter.ai/liquid/lfm-2.5-24b-a2b" target="_blank" rel="noopener nofollow">OpenRouter: LFM2.5-24B-A2B</a>
+  </div>
+  <div class="sources" style="margin-top:10px">
+    <div class="fact">✅ 24B total / 2.45B active, 131,072 context, 16 languages incl. Arabic, LFM 1.0 licence</div><div class="fact">✅ Release Oct 13</div><div class="fact">⚠️ LiveClaw 48.09 vs 38.19; GPQA 74.42 vs 83.69; SWE-Bench Verified 51 vs 66.2</div><div class="fact">⚠️ 184 tok/s on M5 Max, 114 on Ryzen AI Max+ 395</div><div class="fact">⚠️ ~33T pre-training tokens; vocabulary 128K</div><div class="fact">⚠️ OpenRouter price $0.05 in / $0.70 out per 1M</div>
+  </div>
+</article>
+
+<footer>EmaritesAI · الذكاء الاصطناعي والتقنية، يومياً · @emaritesai</footer>
+</div>
+</body>
+</html>
